@@ -1,11 +1,11 @@
 #include <dt-bindings/interrupt-controller/arm-gic.h>
 #include <dt-bindings/soc/qcom,ipcc.h>
-#include <dt-bindings/interconnect/qcom,lahaina.h>
-#include <dt-bindings/clock/qcom,videocc-lahaina.h>
+#include <dt-bindings/interconnect/qcom,waipio.h>
+#include <dt-bindings/clock/qcom,videocc-waipio.h>
 
 &soc {
 	msm_cvp: qcom,cvp@ab00000 {
-		compatible = "qcom,msm-cvp", "qcom,lahaina-cvp";
+		compatible = "qcom,msm-cvp", "qcom,waipio-cvp";
 		status = "ok";
 		reg = <0xab00000 0x100000>;
 		interrupts = <GIC_SPI 234 IRQ_TYPE_LEVEL_HIGH>;
@@ -37,7 +37,7 @@
 		qcom,ipcc-reg = <0x400000 0x100000>;
 
 		pas-id = <26>;
-		memory-region = <&pil_cvp_mem>;
+		memory-region = <&cvp_mem>;
 
 		/* CVP Firmware ELF image name */
 		cvp,firmware-name = "evass";
@@ -96,7 +96,7 @@
 		/* Memory Heaps */
 		qcom,msm-cvp,mem_cdsp {
 			compatible = "qcom,msm-cvp,mem-cdsp";
-			memory-region = <&cdsp_mem>;
+			memory-region = <&cdsp_eva_mem>;
 		};
 	};
 };
