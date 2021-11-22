@@ -1,4 +1,4 @@
-# dtbo-y += diwali-cvp.dtbo
+dtbo-y += diwali-cvp.dtbo
 
 always-y	:= $(dtb-y) $(dtbo-y)
 subdir-y	:= $(dts-dirs)

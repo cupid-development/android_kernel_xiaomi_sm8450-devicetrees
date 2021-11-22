@@ -6,7 +6,7 @@
 #include <dt-bindings/interconnect/qcom,diwali.h>
 #include <dt-bindings/clock/qcom,videocc-diwali.h>
 #include <dt-bindings/clock/qcom,gcc-diwali.h>
-/* #include "diwali-cvp.dtsi" */
+#include "diwali-cvp.dtsi"
 
 / {
 	model = "Qualcomm Technologies, Inc. diwali SoC";
