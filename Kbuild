@@ -22,6 +22,14 @@ ifeq ($(CONFIG_ARCH_KHAJE), y)
 dtbo-y += khaje-vidc.dtbo
 endif
 
+ifeq ($(CONFIG_ARCH_RAVELIN), y)
+dtbo-y += ravelin-vidc.dtbo
+endif
+
+ifeq ($(CONFIG_ARCH_MONACO), y)
+dtbo-y += monaco-vidc.dtbo
+endif
+
 always-y    := $(dtb-y) $(dtbo-y)
 subdir-y    := $(dts-dirs)
 clean-files    := *.dtb *.dtbo
