@@ -2630,7 +2630,7 @@
 			timing@wqhd_10hz_index_06 {
 				#include "dsi-panel-l2-38-0c-0a-dsc-cmd-common.dtsi"
 				cell-index = <6>;
-				qcom,mdss-dsi-panel-framerate = <120>;
+				qcom,mdss-dsi-panel-framerate = <10>;
 				qcom,mdss-dsi-panel-width = <1440>;
 				qcom,mdss-dsi-panel-height = <3200>;
 				qcom,mdss-dsi-h-front-porch = <32>;
@@ -3090,7 +3090,7 @@
 			timing@wqhd_1hz_index_07 {
 				#include "dsi-panel-l2-38-0c-0a-dsc-cmd-common.dtsi"
 				cell-index = <7>;
-				qcom,mdss-dsi-panel-framerate = <120>;
+				qcom,mdss-dsi-panel-framerate = <1>;
 				qcom,mdss-dsi-panel-width = <1440>;
 				qcom,mdss-dsi-panel-height = <3200>;
 				qcom,mdss-dsi-h-front-porch = <32>;
