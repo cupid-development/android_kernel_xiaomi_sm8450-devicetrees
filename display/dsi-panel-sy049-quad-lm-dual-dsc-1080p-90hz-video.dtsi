@@ -1,5 +1,5 @@
 &mdss_mdp {
-	dsi_sy049_dual_dsc_90hz_video: qcom,mdss_dsi_sy049_dual_dsc_90hz_video {
+	dsi_sy049_quad_lm_dual_dsc_90hz_video: qcom,mdss_dsi_sy049_quad_lm_dual_dsc_90hz_video {
 	qcom,mdss-dsi-panel-name =
 		"sy049wdm02 uoled video mode dsi seeya 90Hz panel with DSC";
 	qcom,mdss-dsi-panel-type = "dsi_video_mode";
