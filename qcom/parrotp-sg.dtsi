@@ -10,3 +10,8 @@
 &ipa_hw {
 	status = "disabled";
 };
+
+&msm_gpu {
+	/delete-property/qcom,gpu-model;
+	qcom,gpu-model = "AdrenoA21v1";
+};
