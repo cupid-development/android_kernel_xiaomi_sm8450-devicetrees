@@ -9,11 +9,13 @@ cupid-sm8450-pm8008-overlay.dtbo-base := waipio.dtb waipiop.dtb waipio-v2.dtb wa
 dtbo-$(CONFIG_ARCH_CAPE) += \
 	unicorn-sm8475-pm8008-overlay.dtbo \
 	thor-sm8475-pm8008-overlay.dtbo \
+	marble-sm7475-pm8008-overlay.dtbo \
 	mayfly-sm8475-pm8008-overlay.dtbo \
 	mondrian-sm8475-pm8008-overlay.dtbo
 
 unicorn-sm8475-pm8008-overlay.dtbo-base := cape.dtb cape-v2.dtb capep.dtb
 thor-sm8475-pm8008-overlay.dtbo-base := cape.dtb cape-v2.dtb capep.dtb
+marble-sm7475-pm8008-overlay.dtbo-base := ukee.dtb
 mayfly-sm8475-pm8008-overlay.dtbo-base := cape.dtb cape-v2.dtb capep.dtb
 mondrian-sm8475-pm8008-overlay.dtbo-base := cape.dtb cape-v2.dtb capep.dtb
 else
@@ -347,6 +349,7 @@ dtbo-$(CONFIG_ARCH_CAPE) += cape-mtp-pm8008-overlay.dtbo \
 	ukee-qrd-pm8010-overlay.dtbo \
 	unicorn-sm8475-pm8008-overlay.dtbo \
 	thor-sm8475-pm8008-overlay.dtbo \
+	marble-sm7475-pm8008-overlay.dtbo \
 	mayfly-sm8475-pm8008-overlay.dtbo \
 	mondrian-sm8475-pm8008-overlay.dtbo
 
@@ -385,6 +388,7 @@ ukee-qrd-pm8008-overlay.dtbo-base := ukee.dtb
 ukee-qrd-pm8010-overlay.dtbo-base := ukee.dtb
 unicorn-sm8475-pm8008-overlay.dtbo-base := cape.dtb cape-v2.dtb capep.dtb
 thor-sm8475-pm8008-overlay.dtbo-base := cape.dtb cape-v2.dtb capep.dtb
+marble-sm7475-pm8008-overlay.dtbo-base := ukee.dtb
 mayfly-sm8475-pm8008-overlay.dtbo-base := cape.dtb cape-v2.dtb capep.dtb
 mondrian-sm8475-pm8008-overlay.dtbo-base := cape.dtb cape-v2.dtb capep.dtb
 
