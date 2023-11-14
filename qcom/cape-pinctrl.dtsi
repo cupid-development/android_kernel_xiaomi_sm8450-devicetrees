@@ -462,7 +462,7 @@
 				pins = "gpio124";
 				drive-strength = <2>;   /* 2 mA */
 				bias-pull-down;         /* PULL DOWN */
-				input-enable;
+                                input-enable;
 			};
 		};
 
@@ -475,7 +475,7 @@
 			config {
 				pins = "gpio124";
 				drive-strength = <8>;   /* 8 mA */
-				bias-disable;           /* NO PULL */
+				bias-pull-down;           /* NO PULL */
 			};
 		};
 	};
@@ -1014,7 +1014,7 @@
 
 			config {
 				pins = "gpio91";
-				bias-disable;
+				bias-pull-down;         /* PULL DOWN */
 				drive-strength = <2>;
 			};
 		};
@@ -2785,5 +2785,31 @@
 			};
 		};
 
+	};
+	sbu_uart_en_ctrl {
+		sbu_uart_en_idle_th: uart_audio_en_idle_th {
+			mux {
+				pins = "gpio42";
+				function = "gpio";
+			};
+			config {
+				pins = "gpio42";
+				drive-strength = <2>;
+				bias-pull-down;
+				output-low;
+			};
+		};
+		sbu_uart_en_active_th: uart_audio_en_active_th {
+			mux {
+				pins = "gpio42";
+				function = "gpio";
+			};
+			config {
+				pins = "gpio42";
+				drive-strength = <2>;
+				bias-disable;
+				output-high;
+			};
+		};
 	};
 };
