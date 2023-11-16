@@ -20,3 +20,7 @@
 		#gpio-cells = <0>;
 	};
 };
+
+&swr_haptics {
+	status = "disabled";
+};
