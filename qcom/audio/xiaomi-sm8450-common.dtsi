@@ -1,9 +1,5 @@
 #include "waipio-audio-overlay.dtsi"
 
-&swr_haptics {
-	status = "disabled";
-};
-
 &wsa_macro {
 	status = "disabled";
 };
