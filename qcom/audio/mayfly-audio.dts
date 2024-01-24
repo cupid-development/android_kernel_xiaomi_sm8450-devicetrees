@@ -15,33 +15,33 @@
     sbu_uart_en: msm_cdc_pinctrl@12 {
         compatible = "qcom,msm-cdc-pinctrl";
         pinctrl-names = "aud_active", "aud_sleep";
-        pinctrl-0 = <&sbu_uart_en_active_may>;
-        pinctrl-1 = <&sbu_uart_en_idle_may>;
+        pinctrl-0 = <&sbu_uart_en_active_uni>;
+        pinctrl-1 = <&sbu_uart_en_idle_uni>;
         #gpio-cells = <0>;
     };
 };
 
 &tlmm {
-	sbu_uart_en_idle_may: uart_audio_en_idle_may {
+	sbu_uart_en_idle_uni: uart_audio_en_idle_uni {
 		mux {
-			pins = "gpio12";
+			pins = "gpio74";
 			function = "gpio";
 		};
 		config {
-			pins = "gpio12";
+			pins = "gpio74";
 			drive-strength = <2>;
 			bias-pull-down;
 			output-low;
 		};
 	};
 
-	sbu_uart_en_active_may: uart_audio_en_active_may {
+	sbu_uart_en_active_uni: uart_audio_en_active_uni {
 		mux {
-			pins = "gpio12";
+			pins = "gpio74";
 			function = "gpio";
 		};
 		config {
-			pins = "gpio12";
+			pins = "gpio74";
 			drive-strength = <2>;
 			bias-disable;
 			output-high;
@@ -50,5 +50,5 @@
 };
 
 &swr_haptics {
-	status = "ok";
+	status = "disabled";
 };
