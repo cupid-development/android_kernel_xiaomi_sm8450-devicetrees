@@ -20,6 +20,15 @@ endif
 
 ifeq ($(CONFIG_ARCH_KHAJE), y)
 dtbo-y += khaje-vidc.dtbo
+dtbo-y += khaje-vidc-iot.dtbo
+endif
+
+ifeq ($(CONFIG_ARCH_RAVELIN), y)
+dtbo-y += ravelin-vidc.dtbo
+endif
+
+ifeq ($(CONFIG_ARCH_MONACO), y)
+dtbo-y += monaco-vidc.dtbo
 endif
 
 always-y    := $(dtb-y) $(dtbo-y)
