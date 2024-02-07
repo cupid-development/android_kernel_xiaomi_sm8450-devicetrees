@@ -22,6 +22,11 @@
 	};
 };
 
+&pm8350b_haptics {
+	qcom,vmax-mv = <1450>;
+	qcom,lra-period-us = <5882>;
+};
+
 &pm8350c_switch0 {
 	qcom,led-mask = <9>; /* Channels 1 & 4 */
 	qcom,symmetry-en;
