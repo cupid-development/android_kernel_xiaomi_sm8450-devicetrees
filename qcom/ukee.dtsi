@@ -7,7 +7,7 @@
 };
 
 &msm_gpu {
-	qcom,initial-pwrlevel = <5>;
+	qcom,initial-pwrlevel = <6>;
 
 	/delete-property/qcom,gpu-model;
 	qcom,gpu-model = "Adreno725v1";
