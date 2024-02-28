@@ -324,6 +324,14 @@
 	qcom,symmetry-en;
 };
 
+&cam_csiphy2 {
+	compatible = "qcom,csiphy-v2.1.3-xiaomi-m11a", "qcom,csiphy";
+};
+
+&cam_csiphy4 {
+	compatible = "qcom,csiphy-v2.1.3-xiaomi-m11a", "qcom,csiphy";
+};
+
 &soc {
 	led_flash_wide: qcom,camera-flash@1 {
 		cell-index = <1>;
