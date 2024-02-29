@@ -50,5 +50,5 @@
 };
 
 &swr_haptics {
-	status = "disabled";
+	status = "ok";
 };
