@@ -1,3 +1,24 @@
+ifeq (1,1)
+dtbo-$(CONFIG_ARCH_WAIPIO) += \
+	zeus-sm8450-pm8008-overlay.dtbo \
+	cupid-sm8450-pm8008-overlay.dtbo \
+
+zeus-sm8450-pm8008-overlay.dtbo-base := waipio.dtb waipiop.dtb waipio-v2.dtb waipiop-v2.dtb waipio-lte.dtb
+cupid-sm8450-pm8008-overlay.dtbo-base := waipio.dtb waipiop.dtb waipio-v2.dtb waipiop-v2.dtb waipio-lte.dtb
+
+dtbo-$(CONFIG_ARCH_CAPE) += \
+	unicorn-sm8475-pm8008-overlay.dtbo \
+	thor-sm8475-pm8008-overlay.dtbo \
+	marble-sm7475-pm8008-overlay.dtbo \
+	mayfly-sm8475-pm8008-overlay.dtbo \
+	mondrian-sm8475-pm8008-overlay.dtbo
+
+unicorn-sm8475-pm8008-overlay.dtbo-base := cape.dtb cape-v2.dtb capep.dtb
+thor-sm8475-pm8008-overlay.dtbo-base := cape.dtb cape-v2.dtb capep.dtb
+marble-sm7475-pm8008-overlay.dtbo-base := ukee.dtb
+mayfly-sm8475-pm8008-overlay.dtbo-base := cape.dtb cape-v2.dtb capep.dtb
+mondrian-sm8475-pm8008-overlay.dtbo-base := cape.dtb cape-v2.dtb capep.dtb
+else
 ifneq ($(CONFIG_ARCH_QTI_VM), y)
 ifeq ($(CONFIG_BUILD_ARM64_DT_OVERLAY),y)
 dtbo-$(CONFIG_ARCH_LAHAINA) += lahaina-rumi-overlay.dtbo \
@@ -78,6 +99,8 @@ endif
 ifeq ($(CONFIG_BUILD_ARM64_DT_OVERLAY),y)
 dtbo-$(CONFIG_ARCH_WAIPIO) += waipio-rumi-overlay.dtbo \
 	waipio-mtp-pm8008-overlay.dtbo \
+	zeus-sm8450-pm8008-overlay.dtbo \
+	cupid-sm8450-pm8008-overlay.dtbo \
 	waipio-cdp-pm8008-overlay.dtbo \
 	waipio-qrd-pm8008-overlay.dtbo \
 	waipio-atp-pm8008-overlay.dtbo \
@@ -104,6 +127,8 @@ dtbo-$(CONFIG_ARCH_WAIPIO) += waipio-rumi-overlay.dtbo \
 
 waipio-rumi-overlay.dtbo-base := waipio.dtb waipiop.dtb waipio-v2.dtb waipiop-v2.dtb
 waipio-mtp-pm8008-overlay.dtbo-base := waipio.dtb waipiop.dtb waipio-v2.dtb waipiop-v2.dtb waipio-lte.dtb
+zeus-sm8450-pm8008-overlay.dtbo-base := waipio.dtb waipiop.dtb waipio-v2.dtb waipiop-v2.dtb waipio-lte.dtb
+cupid-sm8450-pm8008-overlay.dtbo-base := waipio.dtb waipiop.dtb waipio-v2.dtb waipiop-v2.dtb waipio-lte.dtb
 waipio-mtp-68disp-pm8008-overlay.dtbo-base := waipio.dtb waipiop.dtb waipio-v2.dtb waipiop-v2.dtb waipio-lte.dtb
 waipio-cdp-pm8008-overlay.dtbo-base := waipio.dtb waipiop.dtb waipio-v2.dtb waipiop-v2.dtb waipio-lte.dtb
 waipio-qrd-pm8008-overlay.dtbo-base := waipio.dtb waipiop.dtb waipio-v2.dtb waipiop-v2.dtb waipio-lte.dtb
@@ -321,7 +346,13 @@ dtbo-$(CONFIG_ARCH_CAPE) += cape-mtp-pm8008-overlay.dtbo \
 	ukee-mtp-nodisplay-pm8008-overlay.dtbo \
 	ukee-mtp-nodisplay-pm8010-overlay.dtbo \
 	ukee-qrd-pm8008-overlay.dtbo \
-	ukee-qrd-pm8010-overlay.dtbo
+	ukee-qrd-pm8010-overlay.dtbo \
+	unicorn-sm8475-pm8008-overlay.dtbo \
+	thor-sm8475-pm8008-overlay.dtbo \
+	marble-sm7475-pm8008-overlay.dtbo \
+	mayfly-sm8475-pm8008-overlay.dtbo \
+	mondrian-sm8475-pm8008-overlay.dtbo
+
 
 cape-mtp-pm8008-overlay.dtbo-base := cape.dtb cape-v2.dtb capep.dtb
 cape-mtp-120fps-pm8008-overlay.dtbo-base := cape.dtb cape-v2.dtb capep.dtb
@@ -355,6 +386,11 @@ ukee-mtp-nodisplay-pm8008-overlay.dtbo-base := ukee.dtb
 ukee-mtp-nodisplay-pm8010-overlay.dtbo-base := ukee.dtb
 ukee-qrd-pm8008-overlay.dtbo-base := ukee.dtb
 ukee-qrd-pm8010-overlay.dtbo-base := ukee.dtb
+unicorn-sm8475-pm8008-overlay.dtbo-base := cape.dtb cape-v2.dtb capep.dtb
+thor-sm8475-pm8008-overlay.dtbo-base := cape.dtb cape-v2.dtb capep.dtb
+marble-sm7475-pm8008-overlay.dtbo-base := ukee.dtb
+mayfly-sm8475-pm8008-overlay.dtbo-base := cape.dtb cape-v2.dtb capep.dtb
+mondrian-sm8475-pm8008-overlay.dtbo-base := cape.dtb cape-v2.dtb capep.dtb
 
 else
 dtb-$(CONFIG_ARCH_CAPE) += cape-mtp-pm8008.dtb \
@@ -741,6 +777,7 @@ dtb-$(CONFIG_ARCH_QTI_VM) +=  \
 	montague-vm-moselle.dtb \
 	montague-vm-hsp.dtb
 
+endif
 endif
 endif
 
