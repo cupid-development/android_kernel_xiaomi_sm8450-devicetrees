@@ -16,6 +16,43 @@
         };
 
 };
+
+&qupv3_se4_spi {
+	status = "okay";
+	qcom,rt;
+	pinctrl-0 = <&mi_ts_spi_active &mi_ts_cs_active>;
+	pinctrl-1 = <&mi_ts_spi_sleep &mi_ts_cs_suspend>;
+
+	xiaomi_touch@0 {
+		status = "okay";
+		compatible = "goodix,gt9916S";
+		reg = <0>;
+		spi-max-frequency = <12000000>;
+		interrupt-parent = <&tlmm>;
+		interrupts = <21 IRQ_TYPE_LEVEL_LOW>;
+		pinctrl-names = "pmx_ts_active", "pmx_ts_suspend";
+		pinctrl-0 = <&mi_ts_active>;
+		pinctrl-1 = <&ts_int_suspend &ts_reset_suspend>;
+
+		goodix,reset-gpio = <&tlmm 20 GPIO_ACTIVE_HIGH>;
+		goodix,irq-gpio = <&tlmm 21 GPIO_TRANSITORY>;
+		goodix,irq-flags = <IRQ_TYPE_EDGE_FALLING>;
+		goodix,panel-max-x = <12200>;
+		goodix,panel-max-y = <27120>;
+		goodix,panel-max-w = <255>;
+		goodix,panel-max-p = <4096>;
+		goodix,avdd-gpio = <&tlmm 71 GPIO_ACTIVE_HIGH>;
+		// TODO: Check this in schematics
+		// goodix,avdd-name = "avdd";
+		// avdd-supply = <&L7C>;
+		goodix,iovdd-name = "vdd";
+		vdd-supply = <&L2C>;
+		goodix,firmware-name = "goodix_firmware_l12.bin";
+		goodix,config-name = "goodix_cfg_group_l12.bin";
+	};
+};
+
+/*
 &qupv3_se4_spi {
 	status = "ok";
 	qcom,rt;
@@ -53,7 +90,6 @@
 		fts,avdd-gpio = <&tlmm 71 0x0>;
 		//avdd-supply = <&L3C>;
 		//vdd-supply = <&L2C>;
-		/*panel = <&dsi_k8_42_02_0a_dsc_cmd>;*/
 		//fts,pwr-reg-name = "avdd";
 		fts,bus-reg-name = "vdd";
 		fts,irq-gpio = <&tlmm 21 0x2008>;
@@ -142,6 +178,8 @@
 		};
 	};
 };
+*/
+
 &tlmm {
         mi_ts_active: mi_ts_active {
                 mux {
