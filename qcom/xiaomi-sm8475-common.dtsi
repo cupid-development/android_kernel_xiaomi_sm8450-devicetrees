@@ -1,0 +1,398 @@
+#include <dt-bindings/gpio/gpio.h>
+#include <dt-bindings/input/input.h>
+
+/ {
+	/delete-node/ &mem-offline;
+};
+
+&aliases {
+	i2c0 = &qupv3_se5_i2c;
+	i2c1 = &qupv3_se9_i2c;
+	i2c2 = &qupv3_se15_i2c;
+	i2c3 = &qupv3_se16_i2c;
+	i2c4 = &qupv3_se19_i2c;
+	i2c5 = &qupv3_se17_i2c;
+};
+
+&apps_rsc {
+	rpmh-regulator-ldoc1 {
+		compatible = "qcom,rpmh-vrm-regulator";
+		qcom,resource-name = "ldoc1";
+		qcom,regulator-type = "pmic5-ldo";
+		qcom,supported-modes =
+			<RPMH_REGULATOR_MODE_LPM
+			RPMH_REGULATOR_MODE_HPM>;
+		qcom,mode-threshold-currents = <0 10000>;
+
+		L1C:
+		pm8350c_l1: regulator-pm8350c-l1 {
+			regulator-name = "pm8350c_l1";
+			qcom,set = <RPMH_REGULATOR_SET_ALL>;
+			regulator-min-microvolt = <1800000>;
+			regulator-max-microvolt = <1800000>;
+			qcom,init-voltage = <1800000>;
+			qcom,init-mode = <RPMH_REGULATOR_MODE_HPM>;
+		};
+	};
+
+	rpmh-regulator-ldoc11 {
+		compatible = "qcom,rpmh-vrm-regulator";
+		qcom,resource-name = "ldoc11";
+		qcom,regulator-type = "pmic5-ldo";
+		qcom,supported-modes =
+			<RPMH_REGULATOR_MODE_LPM
+			 RPMH_REGULATOR_MODE_HPM>;
+		qcom,mode-threshold-currents = <0 10000>;
+
+		L11C:
+		pm8350c_l11: regulator-pm8350c-l11 {
+			regulator-name = "pm8350c_l11";
+			qcom,set = <RPMH_REGULATOR_SET_ALL>;
+			regulator-min-microvolt = <2400000>;
+			regulator-max-microvolt = <3008000>;
+			qcom,init-voltage = <2504000>;
+			qcom,init-mode = <RPMH_REGULATOR_MODE_HPM>;
+		};
+	};
+
+	rpmh-regulator-ldoh4 {
+		compatible = "qcom,rpmh-vrm-regulator";
+		qcom,resource-name = "ldoh4";
+		qcom,regulator-type = "pmic5-ldo";
+		qcom,supported-modes =
+			<RPMH_REGULATOR_MODE_LPM
+			RPMH_REGULATOR_MODE_HPM>;
+		qcom,mode-threshold-currents = <0 10000>;
+
+		L4H:
+		pm8450_l4: regulator-pm8450-l4 {
+			regulator-name = "pm8450_l4";
+			qcom,set = <RPMH_REGULATOR_SET_ALL>;
+			regulator-min-microvolt = <1800000>;
+			regulator-max-microvolt = <1808000>;
+			qcom,init-voltage = <1800000>;
+			qcom,init-mode = <RPMH_REGULATOR_MODE_HPM>;
+		};
+	};
+};
+
+&battery_charger {
+	qcom,thermal-mitigation = <3000000 1500000 1000000 500000>;
+	qcom,wireless-fw-name = "idt9415.bin";
+};
+
+&eusb2_phy0 {
+	dummy-supply = <&nxp_eusb2_repeater>;
+	usb-repeater = <&nxp_eusb2_repeater>;
+};
+
+&pm8350b_gpios {
+	pm8350b_rear_tof_therm {
+		pm8350b_rear_tof_therm_default: pm8350b_rear_tof_therm_default {
+			pins = "gpio2";
+			bias-high-impedance;
+		};
+	};
+};
+
+&pm8350b_haptics {
+	qcom,lra-period-us = <5882>;
+	qcom,vmax-mv = <1250>;
+};
+
+&pm8350c_flash {
+	/delete-property/ qcom,hw-strobe-gpios;
+
+	status = "okay";
+};
+
+&pm8350c_switch0 {
+	qcom,led-mask = <9>; /* Channels 1 & 4 */
+	qcom,symmetry-en;
+};
+
+&pm8350c_switch1 {
+	qcom,led-mask = <6>; /* Channels 2 & 3 */
+	qcom,symmetry-en;
+};
+
+&pm8350c_switch2 {
+	qcom,led-mask = <15>; /* All Channels */
+	qcom,symmetry-en;
+};
+
+&pmk8350 {
+	pon_hlos@1300 {
+		pwrkey-bark {
+			compatible = "qcom,pmk8350-pwrkey-bark";
+			interrupts = <0x0 0x13 0x0 IRQ_TYPE_EDGE_BOTH>;
+			linux,code = <KEY_POWER>;
+		};
+
+		pwrkey-resin-bark {
+			compatible = "qcom,pmk8350-pwrkey-resin-bark";
+			interrupts = <0x0 0x13 0x2 IRQ_TYPE_EDGE_BOTH>;
+			linux,code = <KEY_POWER>;
+		};
+	};
+};
+
+&pmk8350_vadc {
+	pinctrl-0 = <&pm8350b_rear_tof_therm_default>;
+
+	/delete-node/ pmk8350_xo_therm;
+};
+
+&qupv3_se5_i2c {
+	status = "okay";
+
+	/* Remove rtc6226 */
+	/delete-node/ nq@64;
+
+	nxp_eusb2_repeater: eusb2_repeater@4f {
+		compatible = "nxp,eusb2-repeater";
+		reg = <0x4f>;
+
+		reset-gpio = <&pm8350c_gpios 7 GPIO_ACTIVE_HIGH>;
+		pinctrl-names = "default";
+		pinctrl-0 = <&eusb2_reset_ctrl_default>;
+		
+		vdd18-supply = <&S10B>;
+		vdd3-supply = <&L2B>;
+
+		qcom,param-override-seq =
+			/* Rx squelch detection threshold to 110mV; default is 125mV */
+			<0x40 0x06
+			/*
+			 * Tx Deemphasis to 2dB, Tx Deemphasis bit duration to 0.8UI;
+			 * default is 0 for both
+			 */
+			0x22 0x07
+			/* Output Voltage Swing to 500mV; default is 450mV */
+			0x63 0x08>;
+	};
+};
+
+&qupv3_se9_i2c {
+	status = "okay";
+	qcom,clk-freq-out = <1000000>;
+
+	nq@28 {
+		compatible = "qcom,sn-nci";
+		reg = <0x28>;
+
+		interrupt-parent = <&tlmm>;
+		interrupts = <46 IRQ_TYPE_NONE>;
+		interrupt-names = "nfc_irq";
+		pinctrl-names = "nfc_active", "nfc_suspend";
+		pinctrl-0 = <&nfc_int_active &nfc_enable_active>;
+		pinctrl-1 = <&nfc_int_suspend &nfc_enable_suspend>;
+	
+		qcom,sn-irq = <&tlmm 46 GPIO_ACTIVE_HIGH>;
+		qcom,sn-ven = <&tlmm 34 GPIO_ACTIVE_HIGH>;
+		qcom,sn-firm = <&tlmm 45 GPIO_ACTIVE_HIGH>;
+		qcom,sn-clkreq = <&tlmm 35 GPIO_ACTIVE_HIGH>;
+		qcom,sn-vdd-1p8-supply = <&S10B>;
+		qcom,sn-vdd-1p8-voltage = <1800000 1800000>;
+		qcom,sn-vdd-1p8-current = <157000>;
+	};
+};
+
+&qupv3_se13_spi {
+	status = "okay";
+
+	ir-spi@0 {
+		compatible = "ir-spi";
+		reg = <0>;
+		spi-max-frequency = <19200000>;
+	};
+};
+
+&reserved_memory {
+	/delete-node/ &adsp_mem;
+	/delete-node/ &ramoops_mem;
+	/delete-node/ &trust_ui_vm_mem;
+	/delete-node/ &xbl_ramdump_mem;
+
+	adsp_region@9fd00000 {
+		reg = <0x0 0x9fd00000 0x0 0x3100000>;
+		no-map;
+	};
+
+	ramoops@a7000000 {
+		compatible = "ramoops";
+		reg = <0x0 0xa7000000 0x0 0x400000>;
+		console-size = <0x200000>;
+		pmsg-size = <0x200000>;
+	};
+
+	xbl_ramdump_region@a6b80000 {
+		reg = <0x0 0xa6b80000 0x0 0x280000>;
+		no-map;
+	};
+};
+
+&soc {
+	gpio_keys {
+		compatible = "gpio-keys";
+		label = "gpio-keys";
+		pinctrl-names = "default";
+		pinctrl-0 = <&key_vol_up_default>;
+
+		vol_up {
+			label = "volume_up";
+			gpios = <&pm8350_gpios 6 GPIO_ACTIVE_LOW>;
+			linux,input-type = <1>;
+			linux,code = <KEY_VOLUMEUP>;
+			gpio-key,wakeup;
+			debounce-interval = <15>;
+			linux,can-disable;
+		};
+	};
+
+	mtdoops_pmsg@a7000000 {
+		compatible = "mtdoops_pmsg";
+		reg = <0xa7000000 0x400000>;
+		console-size = <0x200000>;
+		pmsg-size = <0x200000>;
+	};
+
+	qcom,spcom {
+		status = "disabled";
+	};
+};
+
+&spss_pas {
+	status = "disabled";
+};
+
+&spss_utils {
+	status = "disabled";
+};
+
+&tert_tdm_dout_active {
+	config {
+		pins = "gpio124";
+		drive-strength = <8>;
+		/* Change bias to pull down */
+		bias-pull-down;
+	};
+};
+
+&thermal_zones {
+	pm8350b-bcl-lvl2 {
+		cooling-maps {
+			vbat_gpu2 {
+				cooling-device = <&msm_gpu 9 9>;
+			};
+		};
+	};
+
+	pm8350c-bcl-lvl2 {
+		cooling-maps {
+			vph_gpu2 {
+				cooling-device = <&msm_gpu 9 9>;
+			};
+		};
+	};
+
+	socd {
+		/delete-property/ thermal-sensors;
+	};
+};
+
+&tlmm {
+	sbu_uart_en_ctrl {
+		sbu_uart_en_idle_th: uart_audio_en_idle_th {
+			mux {
+				pins = "gpio42";
+				function = "gpio";
+			};
+			config {
+				pins = "gpio42";
+				drive-strength = <2>;
+				bias-pull-down;
+				output-low;
+			};
+		};
+
+		sbu_uart_en_active_th: uart_audio_en_active_th {
+			mux {
+				pins = "gpio42";
+				function = "gpio";
+			};
+			config {
+				pins = "gpio42";
+				drive-strength = <2>;
+				bias-disable;
+				output-high;
+			};
+		};
+	};
+};
+
+&ucsi {
+	connector {
+		port {
+			usb_port0_connector: endpoint {
+				remote-endpoint = <&usb_port0>;
+			};
+		};
+	};
+};
+
+&ufshc_mem {
+	vdd-hba-supply = <&gcc_ufs_phy_gdsc>;
+
+	vcc-supply = <&L7B>;
+	vcc-max-microamp = <1100000>;
+
+	vccq-supply = <&L9B>;
+	vccq-max-microamp = <1200000>;
+
+	qcom,vddp-ref-clk-supply = <&L9B>;
+	qcom,vddp-ref-clk-max-microamp = <100>;
+
+	status = "okay";
+};
+
+&ufsphy_mem {
+	compatible = "qcom,ufs-phy-qmp-v4-cape";
+
+	vdda-phy-supply = <&L5B>;
+	vdda-pll-supply = <&L10C>;
+	vdda-phy-max-microamp = <197000>;
+	vdda-pll-max-microamp = <23700>;
+
+	status = "okay";
+};
+
+&usb_qmp_dp_phy {
+	status = "disabled";
+};
+
+&usb0 {
+	usb-role-switch;
+
+	dwc3@a600000 {
+		usb-phy = <&eusb2_phy0>;
+		maximum-speed = "high-speed";
+		snps,usb2-gadget-lpm-disable;
+		usb-role-switch;
+	};
+
+	port {
+		usb_port0: endpoint {
+			remote-endpoint = <&usb_port0_connector>;
+		};
+	};
+};
+
+&usb3phy_portselect_default {
+	config {
+		pins = "gpio91";
+		drive-strength = <2>;
+		/* Change bias to pull down */
+		bias-pull-down;
+	};
+};
