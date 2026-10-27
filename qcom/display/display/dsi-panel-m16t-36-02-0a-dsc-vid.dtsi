@@ -211,16 +211,6 @@
 			mi,mdss-dsi-hbm-off-command = [39 00 00 00 00 00 03 51 07 FF];
 			mi,mdss-dsi-hbm-off-command-state = "dsi_hs_mode";
 
-			mi,mdss-dsi-aod-enter-command = [
-				39 00 00 00 00 00 02 39 00
-			];
-			mi,mdss-dsi-aod-enter-command-state = "dsi_hs_mode";
-
-			mi,mdss-dsi-aod-exit-command = [
-				39 00 00 40 00 00 02 38 00
-			];
-			mi,mdss-dsi-aod-exit-command-state = "dsi_hs_mode";
-
 			mi,mdss-dsi-doze-hbm-command = [
 				39 00 00 00 00 00 07 51 00 F5 07 FF 03 FF
 			];
@@ -255,23 +245,6 @@
 				39 00 00 00 00 00 02 2F 02
 			];
 			mi,mdss-dsi-fps-60-gamma-command-state = "dsi_hs_mode";
-
-			/* enable video trim*/
-			mi,mdss-dsi-aod-enable-video-trim-command = [
-				39 00 00 40 00 00 06 F0 55 AA 52 08 01
-				39 00 00 40 00 00 02 EA 91
-				39 00 00 00 00 00 06 F0 55 AA 52 00 00
-			];
-			mi,mdss-dsi-aod-enable-video-trim-command-state = "dsi_hs_mode";
-
-			/* disable video trim*/
-			mi,mdss-dsi-aod-disable-video-trim-command = [
-				39 00 00 40 00 00 06 F0 55 AA 52 08 01
-				39 00 00 40 00 00 02 EA 11
-				39 00 00 00 00 00 06 F0 55 AA 52 00 00
-			];
-			mi,mdss-dsi-aod-disable-video-trim-command-state = "dsi_hs_mode";
-
 		};
 	};
 };

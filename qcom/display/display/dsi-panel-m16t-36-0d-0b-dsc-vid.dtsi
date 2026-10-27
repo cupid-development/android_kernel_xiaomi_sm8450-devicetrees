@@ -152,14 +152,6 @@ qcom,mdss-dsi-display-timings {
 				39 00 00 00 00 00 03 F0 AA 00
 			];
 			mi,mdss-dsi-bl-sync-off-command-state = "dsi_lp_mode";
-			mi,mdss-dsi-aod-enter-command = [
-				39 00 00 00 00 00 02 39 00
-			];
-			mi,mdss-dsi-aod-enter-command-state = "dsi_hs_mode";
-			mi,mdss-dsi-aod-exit-command = [
-				05 00 00 00 21 00 01 38
-			];
-			mi,mdss-dsi-aod-exit-command-state = "dsi_hs_mode";
 			mi,mdss-dsi-doze-hbm-command = [
 				15 00 00 00 00 00 02 6D 01
 				39 00 00 00 00 00 03 51 00 F5
