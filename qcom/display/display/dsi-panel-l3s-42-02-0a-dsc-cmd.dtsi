@@ -601,6 +601,7 @@
 	mi,local-hbm-white-1000nit-update-flag;
 	mi,local-hbm-white-110nit-update-flag;
 	mi,local-hbm-alpha-table = "nvt";
+	mi,local-hbm-white-param-offset = <6>;
 
 	mi,ddic-round-corner-enabled;
 
