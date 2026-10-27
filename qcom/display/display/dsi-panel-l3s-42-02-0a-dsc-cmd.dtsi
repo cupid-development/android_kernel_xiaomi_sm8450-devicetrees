@@ -672,18 +672,6 @@
 			mi,mdss-dsi-doze-lbm-nolp-command-state = "dsi_lp_mode";
 			mi,mdss-dsi-doze-lbm-nolp-command-update = <0xB2 1 1>;
 
-			mi,mdss-dsi-local-hbm-white-1000nit-giron-pre-read-command = [
-				39 00 00 00 00 00 06 F0 55 AA 52 08 02
-				39 00 00 00 00 00 02 BF 39
-			];
-			mi,mdss-dsi-local-hbm-white-1000nit-giron-pre-read-command-state = "dsi_lp_mode";
-
-			mi,mdss-dsi-local-hbm-white-1000nit-giroff-pre-read-command = [
-				39 00 00 00 00 00 06 F0 55 AA 52 08 02
-				39 00 00 00 00 00 02 BF 19
-			];
-			mi,mdss-dsi-local-hbm-white-1000nit-giroff-pre-read-command-state = "dsi_lp_mode";
-
 			mi,mdss-dsi-local-hbm-normal-white-1000nit-command = [
 				39 00 00 00 00 00 06 F0 55 AA 52 08 02
 				39 00 00 40 00 00 02 6F 08
@@ -722,18 +710,6 @@
 			];
 			mi,mdss-dsi-local-hbm-hlpm-white-1000nit-command-update = <0x51 2 2>, <0x87 11 2>, <0xD0 9 6>;
 			mi,mdss-dsi-local-hbm-hlpm-white-1000nit-command-state = "dsi_lp_mode";
-
-			mi,mdss-dsi-local-hbm-white-110nit-giron-pre-read-command = [
-				39 00 00 00 00 00 06 F0 55 AA 52 08 02
-				39 00 00 00 00 00 02 BF 37
-			];
-			mi,mdss-dsi-local-hbm-white-110nit-giron-pre-read-command-state = "dsi_lp_mode";
-
-			mi,mdss-dsi-local-hbm-white-110nit-giroff-pre-read-command = [
-				39 00 00 00 00 00 06 F0 55 AA 52 08 02
-				39 00 00 00 00 00 02 BF 17
-			];
-			mi,mdss-dsi-local-hbm-white-110nit-giroff-pre-read-command-state = "dsi_lp_mode";
 
 			mi,mdss-dsi-local-hbm-off-to-normal-command = [
 				39 00 00 00 00 00 02 53 20
@@ -866,18 +842,6 @@
 			mi,mdss-dsi-doze-lbm-nolp-command-state = "dsi_lp_mode";
 			mi,mdss-dsi-doze-lbm-nolp-command-update = <0xB2 1 1>;
 
-			mi,mdss-dsi-local-hbm-white-1000nit-giron-pre-read-command = [
-				39 00 00 00 00 00 06 F0 55 AA 52 08 02
-				39 00 00 00 00 00 02 BF 39
-			];
-			mi,mdss-dsi-local-hbm-white-1000nit-giron-pre-read-command-state = "dsi_lp_mode";
-
-			mi,mdss-dsi-local-hbm-white-1000nit-giroff-pre-read-command = [
-				39 00 00 00 00 00 06 F0 55 AA 52 08 02
-				39 00 00 00 00 00 02 BF 19
-			];
-			mi,mdss-dsi-local-hbm-white-1000nit-giroff-pre-read-command-state = "dsi_lp_mode";
-
 			mi,mdss-dsi-local-hbm-normal-white-1000nit-command = [
 				39 00 00 00 00 00 06 F0 55 AA 52 08 02
 				39 00 00 40 00 00 02 6F 08
@@ -925,17 +889,6 @@
 			];
 			mi,mdss-dsi-local-hbm-hlpm-white-1000nit-command-update = <0x51 2 2>, <0x87 19 2>, <0xD0 17 6>;
 			mi,mdss-dsi-local-hbm-hlpm-white-1000nit-command-state = "dsi_lp_mode";
-			mi,mdss-dsi-local-hbm-white-110nit-giron-pre-read-command = [
-				39 00 00 00 00 00 06 F0 55 AA 52 08 02
-				39 00 00 00 00 00 02 BF 37
-			];
-			mi,mdss-dsi-local-hbm-white-110nit-giron-pre-read-command-state = "dsi_lp_mode";
-
-			mi,mdss-dsi-local-hbm-white-110nit-giroff-pre-read-command = [
-				39 00 00 00 00 00 06 F0 55 AA 52 08 02
-				39 00 00 00 00 00 02 BF 17
-			];
-			mi,mdss-dsi-local-hbm-white-110nit-giroff-pre-read-command-state = "dsi_lp_mode";
 
 			mi,mdss-dsi-local-hbm-off-to-normal-command = [
 				39 00 00 00 00 00 02 53 20
@@ -1068,18 +1021,6 @@
 			mi,mdss-dsi-doze-lbm-nolp-command-state = "dsi_lp_mode";
 			mi,mdss-dsi-doze-lbm-nolp-command-update = <0xB2 1 1>;
 
-			mi,mdss-dsi-local-hbm-white-1000nit-giron-pre-read-command = [
-				39 00 00 00 00 00 06 F0 55 AA 52 08 02
-				39 00 00 00 00 00 02 BF 39
-			];
-			mi,mdss-dsi-local-hbm-white-1000nit-giron-pre-read-command-state = "dsi_lp_mode";
-
-			mi,mdss-dsi-local-hbm-white-1000nit-giroff-pre-read-command = [
-				39 00 00 00 00 00 06 F0 55 AA 52 08 02
-				39 00 00 00 00 00 02 BF 19
-			];
-			mi,mdss-dsi-local-hbm-white-1000nit-giroff-pre-read-command-state = "dsi_lp_mode";
-
 			mi,mdss-dsi-local-hbm-normal-white-1000nit-command = [
 				39 00 00 00 00 00 06 F0 55 AA 52 08 02
 				39 00 00 40 00 00 02 6F 08
@@ -1127,17 +1068,6 @@
 			];
 			mi,mdss-dsi-local-hbm-hlpm-white-1000nit-command-update = <0x51 2 2>, <0x87 19 2>, <0xD0 17 6>;
 			mi,mdss-dsi-local-hbm-hlpm-white-1000nit-command-state = "dsi_lp_mode";
-			mi,mdss-dsi-local-hbm-white-110nit-giron-pre-read-command = [
-				39 00 00 00 00 00 06 F0 55 AA 52 08 02
-				39 00 00 00 00 00 02 BF 37
-			];
-			mi,mdss-dsi-local-hbm-white-110nit-giron-pre-read-command-state = "dsi_lp_mode";
-
-			mi,mdss-dsi-local-hbm-white-110nit-giroff-pre-read-command = [
-				39 00 00 00 00 00 06 F0 55 AA 52 08 02
-				39 00 00 00 00 00 02 BF 17
-			];
-			mi,mdss-dsi-local-hbm-white-110nit-giroff-pre-read-command-state = "dsi_lp_mode";
 
 			mi,mdss-dsi-local-hbm-off-to-normal-command = [
 				39 00 00 00 00 00 02 53 20
