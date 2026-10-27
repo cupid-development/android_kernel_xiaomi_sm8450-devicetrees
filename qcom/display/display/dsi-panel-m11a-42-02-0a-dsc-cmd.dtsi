@@ -758,8 +758,9 @@
 	mi,local-hbm-enabled;
 	mi,local-hbm-white-1000nit-update-flag;
 	mi,local-hbm-white-110nit-update-flag;
-	mi,local-hbm-alpha-ctrl-aa-area;
-	mi,local-hbm-ctrl-df-reg;
+	mi,local-hbm-alpha-table = "m11a-42-02-0a";
+	mi,local-hbm-alpha-or = <0x1000>;
+	mi,local-hbm-df-reg-min = <0x51c>;
 	mi,local-hbm-ui-ready-delay-num-frame = <4>; /* 4 frame */
 	mi,fod-low-brightness-clone-threshold = <200>;
 	mi,fod-low-brightness-lux-threshold = <3>;

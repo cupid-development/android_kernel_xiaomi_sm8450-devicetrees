@@ -600,7 +600,7 @@
 
 	mi,local-hbm-white-1000nit-update-flag;
 	mi,local-hbm-white-110nit-update-flag;
-	mi,local-hbm-alpha-ctrl-aa-area;
+	mi,local-hbm-alpha-table = "nvt";
 
 	mi,ddic-round-corner-enabled;
 

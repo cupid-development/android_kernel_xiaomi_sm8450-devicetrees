@@ -503,7 +503,7 @@
 	mi,local-hbm-white-1000nit-update-flag;
 	mi,local-hbm-white-110nit-update-flag;
 	mi,local-hbm-green-500nit-update-flag;
-	mi,local-hbm-alpha-ctrl-aa-area;
+	mi,local-hbm-alpha-table = "l9s-42-02-0c";
 	mi,need-fod-animal-in-normal-enabled;
 
 	mi,flat-update-flag;

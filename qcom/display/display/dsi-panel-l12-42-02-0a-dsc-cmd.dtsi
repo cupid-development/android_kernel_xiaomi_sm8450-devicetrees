@@ -526,7 +526,9 @@
 	mi,local-hbm-enabled;
 	mi,local-hbm-white-1000nit-update-flag;
 	mi,local-hbm-white-110nit-update-flag;
-	mi,local-hbm-alpha-ctrl-aa-area;
+	mi,local-hbm-alpha-table = "l12-42-02-0a";
+	mi,local-hbm-alpha-max = <0xfff>;
+	mi,local-hbm-alpha-or = <0x1000>;
 
 	mi,panel-on-dimming-delay = <120>;
 	mi,max-brightness-clone = <4095>;

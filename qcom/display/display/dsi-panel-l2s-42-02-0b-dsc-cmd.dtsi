@@ -51,7 +51,7 @@
 		mi,panel-id = <0x004C3253 0x00420200>;
 
 		mi,local-hbm-enabled;
-		mi,local-hbm-alpha-ctrl-aa-area;
+		mi,local-hbm-alpha-table = "l2s-42-02-0b";
 
 		mi,local-hbm-ui-ready-delay-num-frame = <4>; /* 4 frame */
 		mi,fod-low-brightness-clone-threshold = <411>;

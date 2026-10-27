@@ -834,8 +834,10 @@
 	mi,local-hbm-enabled;
 	mi,local-hbm-white-1000nit-update-flag;
 	mi,local-hbm-white-110nit-update-flag;
-	mi,local-hbm-alpha-ctrl-aa-area;
-	mi,local-hbm-ctrl-df-reg;
+	mi,local-hbm-alpha-table = "l12-36-02-0b";
+	mi,local-hbm-alpha-max = <0xfff>;
+	mi,local-hbm-alpha-or = <0x250000>;
+	mi,local-hbm-df-reg-min = <0x520>;
 
 	mi,doze-hbm-dbv-level = <252>;
 	mi,doze-lbm-dbv-level = <20>;
