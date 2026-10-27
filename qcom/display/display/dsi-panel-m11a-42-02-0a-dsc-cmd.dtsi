@@ -735,6 +735,7 @@
 	mi,esd-err-irq-gpio = <&tlmm 116 0x2008>;
 
 	mi,panel-id = <0x4D313141 0x00420200>;
+	mi,dsc-rc-profile = "nt37801";
 
 	mi,max-brightness-clone = <16383>;
 	mi,normal-max-brightness-clone = <8191>;

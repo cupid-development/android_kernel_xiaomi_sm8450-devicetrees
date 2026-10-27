@@ -590,6 +590,7 @@
 
 &dsi_l9s_36_02_0b_mp_amoled_dsc_cmd {
 	mi,panel-id = <0x004C3953 0x00360200>;
+	mi,dsc-rc-profile = "nvt";
 	mi,hbm-51-ctl-flag;
 	mi,bl-51ctl-32bit-flag;
 	mi,aod-bl-51ctl-flag;

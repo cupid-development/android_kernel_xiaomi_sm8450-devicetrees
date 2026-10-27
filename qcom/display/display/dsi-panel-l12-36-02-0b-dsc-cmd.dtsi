@@ -814,6 +814,7 @@
 
 &dsi_l12_36_02_0b_dsc_cmd {
 	mi,panel-id = <0x004C3132 0x00360200>;
+	mi,dsc-rc-profile = "nt37705";
 
 	/* IRQF_ONESHOT | IRQF_TRIGGER_LOW */
 	mi,esd-err-irq-gpio = <&tlmm 116 0x2008>;

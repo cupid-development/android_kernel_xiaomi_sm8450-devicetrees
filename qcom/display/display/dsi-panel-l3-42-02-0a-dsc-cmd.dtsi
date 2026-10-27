@@ -558,6 +558,7 @@
 
 &dsi_l3_42_02_0a_dsc_cmd {
 	mi,panel-id = <0x00004C33 0x00420200>;
+	mi,dsc-rc-profile = "nvt";
 	mi,hbm-51-ctl-flag;
 	mi,hbm-bl-min-level = <1>;
 	mi,hbm-bl-max-level = <2047>;

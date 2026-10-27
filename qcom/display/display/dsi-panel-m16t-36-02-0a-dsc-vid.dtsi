@@ -189,6 +189,7 @@
 
 &dsi_m16t_36_02_0a_dsc_vid {
 	mi,panel-id = <0x4D313654 0x00360200>;
+	mi,dsc-rc-profile = "nt37801";
 
 	mi,max-brightness-clone = <16383>;
 	mi,normal-max-brightness-clone = <4095>;
