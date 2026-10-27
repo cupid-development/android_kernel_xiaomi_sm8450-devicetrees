@@ -840,14 +840,6 @@
 			mi,mdss-dsi-dimmingon-command = [39 00 00 00 00 00 02 53 28];
 			mi,mdss-dsi-dimmingon-command-state = "dsi_hs_mode";
 
-			mi,mdss-dsi-hbm-fod-on-command = [
-				39 00 00 00 00 00 05 51 0F FF 00 00];
-			mi,mdss-dsi-hbm-fod-on-command-state = "dsi_lp_mode";
-			mi,mdss-dsi-hbm-fod-off-command = [
-				39 00 00 00 00 00 05 51 07 FF 00 00];
-			mi,mdss-dsi-hbm-fod-off-command-state = "dsi_lp_mode";
-			mi,mdss-dsi-hbm-fod-off-command-update = <0x51 0 2>;
-
 			mi,mdss-dsi-local-hbm-normal-white-1000nit-command = [
 				39 00 00 40 00 00 06 F0 55 AA 52 08 00
 				39 00 00 40 00 00 02 6F 31
@@ -998,14 +990,6 @@
 			mi,mdss-dsi-dimmingon-command = [39 00 00 00 00 00 02 53 28];
 			mi,mdss-dsi-dimmingon-command-state = "dsi_hs_mode";
 
-			mi,mdss-dsi-hbm-fod-on-command = [
-				39 00 00 00 00 00 05 51 0F FF 00 00];
-			mi,mdss-dsi-hbm-fod-on-command-state = "dsi_lp_mode";
-			mi,mdss-dsi-hbm-fod-off-command = [
-				39 00 00 00 00 00 05 51 07 FF 00 00];
-			mi,mdss-dsi-hbm-fod-off-command-state = "dsi_lp_mode";
-			mi,mdss-dsi-hbm-fod-off-command-update = <0x51 0 2>;
-
 			mi,mdss-dsi-local-hbm-normal-white-1000nit-command = [
 				39 00 00 40 00 00 06 F0 55 AA 52 08 00
 				39 00 00 40 00 00 02 6F 31
@@ -1155,14 +1139,6 @@
 			/*<flat on gamma, flat off gamma>*/
 			mi,mdss-dsi-dimmingon-command = [39 00 00 00 00 00 02 53 28];
 			mi,mdss-dsi-dimmingon-command-state = "dsi_hs_mode";
-
-			mi,mdss-dsi-hbm-fod-on-command = [
-				39 00 00 00 00 00 05 51 0F FF 00 00];
-			mi,mdss-dsi-hbm-fod-on-command-state = "dsi_lp_mode";
-			mi,mdss-dsi-hbm-fod-off-command = [
-				39 00 00 00 00 00 05 51 07 FF 00 00];
-			mi,mdss-dsi-hbm-fod-off-command-state = "dsi_lp_mode";
-			mi,mdss-dsi-hbm-fod-off-command-update = <0x51 0 2>;
 
 			mi,mdss-dsi-local-hbm-normal-white-1000nit-command = [
 				/* Local HBM setting*/

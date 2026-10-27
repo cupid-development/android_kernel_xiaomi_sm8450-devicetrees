@@ -141,13 +141,3 @@ mi,mdss-dsi-hbm-off-command = [
 	39 00 00 00 00 00 03 51 07 FF
 ];
 mi,mdss-dsi-hbm-off-command-state = "dsi_hs_mode";
-
-mi,mdss-dsi-hbm-fod-on-command = [
-	39 00 00 00 00 00 03 51 0F FF
-];
-mi,mdss-dsi-hbm-fod-on-command-state = "dsi_hs_mode";
-
-mi,mdss-dsi-hbm-fod-off-command = [
-	39 00 00 00 00 00 03 51 07 FF
-];
-mi,mdss-dsi-hbm-fod-off-command-state = "dsi_hs_mode";

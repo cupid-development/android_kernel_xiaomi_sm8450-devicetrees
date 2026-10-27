@@ -1,17 +1,4 @@
 
-			/* fod lhbm */
-			mi,mdss-dsi-hbm-fod-on-command = [
-				39 00 00 40 00 00 06 F0 55 AA 52 08 02
-				15 00 00 00 00 00 02 CC 00
-				39 00 00 00 00 00 03 51 0F FF];
-			mi,mdss-dsi-hbm-fod-on-command-state = "dsi_lp_mode";
-			mi,mdss-dsi-hbm-fod-off-command = [
-				39 00 00 40 00 00 06 F0 55 AA 52 08 02
-				15 00 00 00 00 00 02 CC 00
-				39 00 00 00 00 00 03 51 07 FF];
-			mi,mdss-dsi-hbm-fod-off-command-state = "dsi_lp_mode";
-			mi,mdss-dsi-hbm-fod-off-command-update = <0x51 0 2>;
-
 			mi,mdss-dsi-local-hbm-normal-white-1000nit-command = [
 				39 00 00 40 00 00 06 F0 55 AA 52 08 02
 				15 00 00 00 00 00 02 CC 00

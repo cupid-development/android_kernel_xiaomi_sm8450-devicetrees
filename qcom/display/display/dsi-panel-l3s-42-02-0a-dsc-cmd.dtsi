@@ -612,14 +612,6 @@
 				39 00 00 00 00 00 05 51 07 FF 00 00];
 			mi,mdss-dsi-hbm-off-command-state = "dsi_lp_mode";
 
-			mi,mdss-dsi-hbm-fod-on-command = [
-				39 00 00 00 00 00 05 51 0F FF 00 00];
-			mi,mdss-dsi-hbm-fod-on-command-state = "dsi_lp_mode";
-			mi,mdss-dsi-hbm-fod-off-command = [
-				39 00 00 00 00 00 05 51 07 FF 00 00];
-			mi,mdss-dsi-hbm-fod-off-command-state = "dsi_lp_mode";
-			mi,mdss-dsi-hbm-fod-off-command-update = <0x51 0 2>;
-
 			mi,mdss-dsi-doze-hbm-command = [
 				/* 60 Hz */
 				39 00 00 00 00 00 02 2F 01
@@ -769,14 +761,6 @@
 			mi,mdss-dsi-hbm-off-command = [
 				39 00 00 00 00 00 05 51 07 FF 00 00];
 			mi,mdss-dsi-hbm-off-command-state = "dsi_lp_mode";
-
-			mi,mdss-dsi-hbm-fod-on-command = [
-				39 00 00 00 00 00 05 51 0F FF 00 00];
-			mi,mdss-dsi-hbm-fod-on-command-state = "dsi_lp_mode";
-			mi,mdss-dsi-hbm-fod-off-command = [
-				39 00 00 00 00 00 05 51 07 FF 00 00];
-			mi,mdss-dsi-hbm-fod-off-command-state = "dsi_lp_mode";
-			mi,mdss-dsi-hbm-fod-off-command-update = <0x51 0 2>;
 
 			mi,mdss-dsi-doze-hbm-command = [
 				/* 60 Hz */
@@ -948,14 +932,6 @@
 			mi,mdss-dsi-hbm-off-command = [
 				39 00 00 00 00 00 05 51 07 FF 00 00];
 			mi,mdss-dsi-hbm-off-command-state = "dsi_lp_mode";
-
-			mi,mdss-dsi-hbm-fod-on-command = [
-				39 00 00 00 00 00 05 51 0F FF 00 00];
-			mi,mdss-dsi-hbm-fod-on-command-state = "dsi_lp_mode";
-			mi,mdss-dsi-hbm-fod-off-command = [
-				39 00 00 00 00 00 05 51 07 FF 00 00];
-			mi,mdss-dsi-hbm-fod-off-command-state = "dsi_lp_mode";
-			mi,mdss-dsi-hbm-fod-off-command-update = <0x51 0 2>;
 
 			mi,mdss-dsi-doze-hbm-command = [
 				/* 60 Hz */

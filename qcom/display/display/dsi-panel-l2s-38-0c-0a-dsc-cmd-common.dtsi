@@ -106,18 +106,3 @@
 				/* <mipi_address  update_index  update_length> */
 				mi,mdss-dsi-hbm-off-command-update = <0x51 1 2>;
 				mi,mdss-dsi-hbm-off-command-state = "dsi_lp_mode";
-
-				mi,mdss-dsi-hbm-fod-on-command = [
-					/* HBM On */
-					15 00 00 40 00 00 02 53 E0
-					39 00 00 00 00 00 03 51 07 FF
-				];
-				mi,mdss-dsi-hbm-fod-on-command-state = "dsi_lp_mode";
-				mi,mdss-dsi-hbm-fod-off-command = [
-					/* HBM off*/
-					15 00 00 40 00 00 02 53 20
-					39 00 00 00 00 00 03 51 07 FF
-				];
-				/* <mipi_address  update_index  update_length> */
-				mi,mdss-dsi-hbm-fod-off-command-update = <0x51 1 2>;
-				mi,mdss-dsi-hbm-fod-off-command-state = "dsi_lp_mode";
