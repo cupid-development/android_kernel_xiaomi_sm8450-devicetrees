@@ -515,9 +515,7 @@
 
 	mi,panel-aod-to-off-command-need-enabled;
 
-	mi,update-vdc-param-enabled;
-	mi,dsi-on-e9-index = <1>;
-	mi,dsi-on-b9-index = <3>;
+	mi,vdc-param-update = <0xe9 1 4>, <0xb9 3 4>;
 
 	mi,panel-on-dimming-delay = <120>;
 
