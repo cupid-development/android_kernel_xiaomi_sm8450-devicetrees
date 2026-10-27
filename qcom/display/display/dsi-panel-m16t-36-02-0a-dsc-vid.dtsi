@@ -204,6 +204,7 @@
 	/* AOD CONFIG*/
 	mi,doze-hbm-dbv-level = <245>;
 	mi,doze-lbm-dbv-level = <20>;
+	mi,underflow-color-black;
 	mi,power-off-delay-ms = <2 0>;
 	mi,aod-nolp-command-enabled;
 
