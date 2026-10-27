@@ -833,8 +833,5 @@
 
 	/* IRQF_ONESHOT | IRQF_TRIGGER_LOW */
 	mi,esd-err-irq-gpio = <&tlmm 116 0x2008>;
-	mi,mdss-dsi-panel-dc-threshold = <348>;
-	mi,dc-feature-enabled;
-	mi,dc-feature-type = "crc_skip_backlight";
 };
 

@@ -59,10 +59,6 @@
 		mi,doze-lbm-dbv-level = <16>;
 		mi,aod-nolp-command-enabled;
 
-		mi,mdss-dsi-panel-dc-threshold = <450>;
-		mi,dc-feature-enabled;
-		mi,dc-feature-type = "crc_skip_backlight";
-
 		qcom,mdss-dsi-display-timings {
 			timing@wqhd_60hz_index_00 {
 				#include "dsi-panel-l2s-38-0c-0a-dsc-cmd-common.dtsi"

@@ -440,9 +440,6 @@
 	mi,doze-hbm-dbv-level = <196>;
 	mi,doze-lbm-dbv-level = <22>;
 	mi,dbv-skip-range = <448 450>;
-	mi,mdss-dsi-panel-dc-threshold = <450>;
-	mi,dc-feature-enabled;
-	mi,dc-feature-type = "crc_skip_backlight";
 
 	qcom,mdss-dsi-display-timings {
 		/* 60 hz */

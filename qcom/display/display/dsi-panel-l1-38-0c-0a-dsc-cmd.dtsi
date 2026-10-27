@@ -59,10 +59,6 @@
 		mi,doze-lbm-dbv-level = <16>;
 		mi,aod-nolp-command-enabled;
 
-		mi,mdss-dsi-panel-dc-threshold = <450>;
-		mi,dc-feature-enabled;
-		mi,dc-feature-type = "crc_skip_backlight";
-
 		mi,panel-manufacturer-info-addr =  <0xa1>;
 		mi,panel-wp-info-offset = <0>;
 		mi,panel-wp-info-len = <4>;

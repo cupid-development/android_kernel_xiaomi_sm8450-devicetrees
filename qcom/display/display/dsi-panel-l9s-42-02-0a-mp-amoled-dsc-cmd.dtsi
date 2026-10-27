@@ -605,13 +605,6 @@
 			mi,mdss-dsi-hbm-on-command-state = "dsi_lp_mode";
 			mi,mdss-dsi-hbm-off-command = [39 00 00 00 00 00 05 51 07 FF 00 00];
 			mi,mdss-dsi-hbm-off-command-state = "dsi_lp_mode";
-			mi,mdss-dsi-switch-page-command = [
-			/* switch page, last byte is page config */
-				39 00 00 00 00 00 06 F0 55 AA 52 08 00
-			];
-			/* <mipi_address  update_index  update_length> */
-			mi,mdss-dsi-switch-page-command-update = <0xF0 0 5>;
-			mi,mdss-dsi-switch-page-command-state = "dsi_lp_mode";
 
 			mi,mdss-dsi-doze-hbm-command = [
 				39 00 00 00 00 00 02 2F 01
@@ -857,14 +850,6 @@
 			mi,mdss-dsi-hbm-on-command-state = "dsi_lp_mode";
 			mi,mdss-dsi-hbm-off-command = [39 00 00 00 00 00 05 51 07 FF 00 00];
 			mi,mdss-dsi-hbm-off-command-state = "dsi_lp_mode";
-
-			mi,mdss-dsi-switch-page-command = [
-			/* switch page, last byte is page config */
-				39 00 00 00 00 00 06 F0 55 AA 52 08 00
-			];
-			/* <mipi_address  update_index  update_length> */
-			mi,mdss-dsi-switch-page-command-update = <0xF0 0 5>;
-			mi,mdss-dsi-switch-page-command-state = "dsi_lp_mode";
 
 			mi,mdss-dsi-doze-hbm-command = [
 				39 00 00 00 00 00 02 2F 01
@@ -1114,14 +1099,6 @@
 			mi,mdss-dsi-hbm-on-command-state = "dsi_lp_mode";
 			mi,mdss-dsi-hbm-off-command = [39 00 00 00 00 00 05 51 07 FF 00 00];
 			mi,mdss-dsi-hbm-off-command-state = "dsi_lp_mode";
-
-			mi,mdss-dsi-switch-page-command = [
-			/* switch page, last byte is page config */
-				39 00 00 00 00 00 06 F0 55 AA 52 08 00
-			];
-			/* <mipi_address  update_index  update_length> */
-			mi,mdss-dsi-switch-page-command-update = <0xF0 0 5>;
-			mi,mdss-dsi-switch-page-command-state = "dsi_lp_mode";
 
 			mi,mdss-dsi-doze-hbm-command = [
 				39 00 00 00 00 00 02 2F 01
