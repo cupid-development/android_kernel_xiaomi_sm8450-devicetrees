@@ -123,11 +123,6 @@ qcom,mdss-dsi-display-timings {
 };
 &dsi_m16t_36_0d_0b_dsc_vid {
 	mi,dsc-rc-profile = "nt37801";
-	mi,max-brightness-clone = <16383>;
-	mi,normal-max-brightness-clone = <4095>;
-	mi,mdss-dsi-fac-bl-max-level = <2047>;
-	mi,mdss-fac-brightness-max-level = <2047>;
-	mi,thermal-dimming-flag;
 	mi,panel-on-dimming-delay = <120>;
 	/* AOD CONFIG*/
 	mi,doze-hbm-dbv-level = <245>;

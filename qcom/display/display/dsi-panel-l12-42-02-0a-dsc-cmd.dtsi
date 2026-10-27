@@ -531,16 +531,11 @@
 	mi,local-hbm-alpha-or = <0x1000>;
 
 	mi,panel-on-dimming-delay = <120>;
-	mi,max-brightness-clone = <4095>;
-	mi,normal-max-brightness-clone = <2047>;
-	mi,mdss-dsi-fac-bl-max-level = <2047>;
-	mi,mdss-fac-brightness-max-level = <2047>;
 
 	mi,doze-hbm-dbv-level = <252>;
 	mi,doze-lbm-dbv-level = <20>;
 	mi,post-unprepare-delay-ms = <10>;
 
-	mi,thermal-dimming-flag;
 	mi,ddic-round-corner-enabled;
 
 	mi,flat-update-flag;

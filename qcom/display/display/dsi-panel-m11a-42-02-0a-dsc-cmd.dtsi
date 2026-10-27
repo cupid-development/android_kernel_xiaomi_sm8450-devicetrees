@@ -736,11 +736,6 @@
 
 	mi,dsc-rc-profile = "nt37801";
 
-	mi,max-brightness-clone = <16383>;
-	mi,normal-max-brightness-clone = <8191>;
-	mi,mdss-dsi-fac-bl-max-level = <2047>;
-	mi,mdss-fac-brightness-max-level = <2047>;
-
 	mi,ddic-round-corner-enabled;
 
 	mi,flat-update-flag;
@@ -766,8 +761,6 @@
 	mi,doze-lbm-dbv-level = <20>;
 	mi,power-off-delay-ms = <3 0>;
 	mi,aod-nolp-command-enabled;
-
-	mi,thermal-dimming-flag;
 
 	qcom,mdss-dsi-display-timings {
 		/* 60hz */

@@ -590,14 +590,10 @@
 
 &dsi_l9s_36_02_0b_mp_amoled_dsc_cmd {
 	mi,dsc-rc-profile = "nvt";
-	mi,max-brightness-clone = <4095>;
-	mi,thermal-dimming-flag;
 	mi,local-hbm-enabled;
 	mi,doze-hbm-dbv-level = <245>;
 	mi,doze-lbm-dbv-level = <20>;
 	mi,timing-switch-wait-vblank;
-	mi,mdss-dsi-fac-bl-max-level = <2047>;
-	mi,mdss-fac-brightness-max-level = <2047>;
 	mi,local-hbm-white-1000nit-update-flag;
 	mi,local-hbm-white-110nit-update-flag;
 	mi,local-hbm-green-500nit-update-flag;

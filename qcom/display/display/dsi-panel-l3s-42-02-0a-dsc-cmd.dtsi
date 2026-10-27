@@ -605,14 +605,10 @@
 	mi,dc-feature-type = "lut_compatible_backlight";
 	mi,dc-update-flag;
 
-	mi,max-brightness-clone = <16383>;
-	mi,mdss-dsi-fac-bl-max-level = <2047>;
-	mi,mdss-fac-brightness-max-level = <2047>;
 	mi,doze-hbm-dbv-level = <252>;
 	mi,doze-lbm-dbv-level = <20>;
 	mi,post-unprepare-delay-ms = <1>;
 	mi,dbv-skip-range = <320 326>;
-	mi,thermal-dimming-flag;
 
 	qcom,mdss-dsi-display-timings {
 		timing@0{ /* 60 hz */

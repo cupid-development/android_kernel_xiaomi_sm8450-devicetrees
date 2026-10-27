@@ -56,9 +56,6 @@
 		mi,need-fod-animal-in-normal-enabled;
 
 		mi,panel-on-dimming-delay = <120>;
-		mi,max-brightness-clone = <8191>;
-		mi,normal-max-brightness-clone = <8191>;
-		mi,thermal-dimming-flag;
 
 		mi,doze-hbm-dbv-level = <229>;
 		mi,doze-lbm-dbv-level = <16>;

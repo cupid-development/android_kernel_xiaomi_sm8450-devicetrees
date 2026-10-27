@@ -480,10 +480,6 @@
 
 &dsi_l9s_42_02_0c_mp_amoled_dsc_cmd {
 	mi,dsc-rc-profile = "nvt";
-	mi,max-brightness-clone = <4095>;
-	mi,mdss-dsi-fac-bl-max-level = <2047>;
-	mi,mdss-fac-brightness-max-level = <2047>;
-	mi,thermal-dimming-flag;
 
 	mi,local-hbm-enabled;
 	mi,doze-hbm-dbv-level = <245>;

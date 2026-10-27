@@ -818,15 +818,9 @@
 	/* IRQF_ONESHOT | IRQF_TRIGGER_LOW */
 	mi,esd-err-irq-gpio = <&tlmm 116 0x2008>;
 
-	mi,thermal-dimming-flag;
 	mi,panel-on-dimming-delay = <120>;
 	mi,dimming-need-update-speed;
 	mi,dimming-node = <0 200 450 800 4095>;
-
-	mi,max-brightness-clone = <4095>;
-	mi,normal-max-brightness-clone = <2047>;
-	mi,mdss-dsi-fac-bl-max-level = <2047>;
-	mi,mdss-fac-brightness-max-level = <2047>;
 
 	mi,local-hbm-enabled;
 	mi,local-hbm-white-1000nit-update-flag;
