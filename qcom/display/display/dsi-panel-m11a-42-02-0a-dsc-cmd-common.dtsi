@@ -216,53 +216,6 @@
 			mi,mdss-dsi-local-hbm-hlpm-white-110nit-command-update  = <0x51 2 2>, <0x87 38 3>, <0xD0 36 6>;
 			mi,mdss-dsi-local-hbm-hlpm-white-110nit-command-state = "dsi_hs_mode";
 
-			mi,mdss-dsi-local-hbm-normal-green-500nit-command = [
-				39 00 00 40 00 00 06 F0 55 AA 52 08 02
-				15 00 00 00 00 00 02 CC 00
-				/* RND Setting for LHBM */
-				39 00 00 40 00 00 06 F0 55 AA 52 08 07
-				39 00 00 40 00 00 02 C0 B1
-				/* local hbm setting */
-				39 00 00 40 00 00 06 F0 55 AA 52 08 00
-				39 00 00 40 00 00 04 DF 45 00 00
-				39 00 00 40 00 00 02 6F 13
-				39 00 00 40 00 00 05 DF 02 D0 0B 42
-				39 00 00 40 00 00 02 6F 1B
-				39 00 00 40 00 00 05 DF 02 54 0A C6
-				39 00 00 40 00 00 02 6F 1F
-				39 00 00 40 00 00 05 DF 03 4C 0B BE
-				39 00 00 40 00 00 02 6F 2B
-				39 00 00 40 00 00 07 DF 3F FF 3F FF 3F FF
-				39 00 00 40 00 00 02 6F 32
-				39 00 00 40 00 00 07 DF 00 00 13 00 00 00
-				/* EM_DT_FP-14 bit */
-				39 00 00 40 00 00 02 6F 38
-				39 00 00 40 00 00 03 DF 00 40
-				39 00 00 40 00 00 02 6F 88
-				39 00 00 40 00 00 02 DF 40
-				/* FPR1_EN FPR1_CENTER_X/Y */
-				39 00 00 40 00 00 02 6F 00
-				39 00 00 40 00 00 06 88 01 02 D0 0B 44
-				/* Dimming */
-				39 00 00 40 00 00 02 53 20
-				/* DBV_DIM_FP - 14 bit */
-				39 00 00 40 00 00 06 F0 55 AA 52 08 00
-				39 00 00 40 00 00 02 6F 4C
-				39 00 00 40 00 00 03 DF 05 1C
-				/* FPR Gamma code, R/G/B[11:0] */
-				39 00 00 40 00 00 06 F0 55 AA 52 08 02
-				39 00 00 40 00 00 07 D0 00 00 09 1A 00 00
-				/* FPR ALPHA */
-				39 00 00 40 00 00 02 6F 01
-				39 00 00 40 00 00 03 87 0D FF
-				/* FPR ON */
-				39 00 00 40 00 00 02 87 21
-				39 00 00 00 00 00 02 85 00
-			];
-			/* <mipi_address  update_index  update_length> */
-			mi,mdss-dsi-local-hbm-normal-green-500nit-command-update = <0x87 29 2>, <0xD0 27 6>, <0xDF 25 2>;
-			mi,mdss-dsi-local-hbm-normal-green-500nit-command-state = "dsi_lp_mode";
-
 			mi,mdss-dsi-local-hbm-off-to-normal-command = [
 				39 00 00 40 00 00 06 F0 55 AA 52 08 02
 				15 00 00 00 00 00 02 CC 00

@@ -688,37 +688,6 @@
 			mi,mdss-dsi-local-hbm-hlpm-white-110nit-command-update  = <0x87 20 2>, <0x51 17 2>, <0xD0 13 6>;
 			mi,mdss-dsi-local-hbm-hlpm-white-110nit-command-state = "dsi_hs_mode";
 
-			mi,mdss-dsi-local-hbm-normal-green-500nit-command = [
-				39 00 00 00 00 00 06 F0 55 AA 52 08 00
-				39 00 00 40 00 00 02 6F 17
-				/* normal dbv  0x07FF,  HBM 0x0FFF */
-				39 00 00 40 00 00 03 B2 07 FF
-				/* EM-1 pluse */
-				39 00 00 40 00 00 02 6F 1F
-				39 00 00 40 00 00 03 B2 00 50
-				39 00 00 40 00 00 06 F0 55 AA 52 08 02
-				/* No smooth mode */
-				39 00 00 40 00 00 02 D1 01
-				39 00 00 40 00 00 02 6F 08
-				/* FPR area RGB[11:0] setting */
-				39 00 00 40 00 00 07 D0 00 00 07 F1 00 00
-				39 00 00 40 00 00 06 F0 55 AA 52 08 07
-				39 00 00 40 00 00 02 D9 40
-				/* RCN ON */
-				39 00 00 40 00 00 02 C0 01
-				/* normal dbv  0x07FF,  HBM 0x0FFF */
-				39 00 00 40 00 00 03 51 07 FF
-				39 00 00 40 00 00 02 6F 01
-				/* FPR center postion x[11:0], y[11:0] */
-				39 00 00 40 00 00 05 88 02 62 09 8C
-				/* alpha for AA */
-				39 00 00 40 00 00 03 87 11 11
-				39 00 00 40 00 00 02 88 01
-				39 00 00 00 00 00 02 85 01
-			];
-			mi,mdss-dsi-local-hbm-normal-green-500nit-command-update  = <0x87 15 2>, <0x51 12 2>;
-			mi,mdss-dsi-local-hbm-normal-green-500nit-command-state = "dsi_lp_mode";
-
 			mi,mdss-dsi-local-hbm-off-to-normal-command = [
 				/* Normal Mode DBV */
 				39 00 00 00 00 00 02 53 20
@@ -967,37 +936,6 @@
 			mi,mdss-dsi-local-hbm-hlpm-white-110nit-command-update  = <0x87 20 2>, <0x51 17 2>, <0xD0 13 6>;
 			mi,mdss-dsi-local-hbm-hlpm-white-110nit-command-state = "dsi_hs_mode";
 
-			mi,mdss-dsi-local-hbm-normal-green-500nit-command = [
-				39 00 00 00 00 00 06 F0 55 AA 52 08 00
-				39 00 00 40 00 00 02 6F 17
-				/* normal dbv  0x07FF,  HBM 0x0FFF */
-				39 00 00 40 00 00 03 B2 07 FF
-				/* EM-1 pluse */
-				39 00 00 40 00 00 02 6F 1F
-				39 00 00 40 00 00 03 B2 00 50
-				39 00 00 40 00 00 06 F0 55 AA 52 08 02
-				/* No smooth mode */
-				39 00 00 40 00 00 02 D1 01
-				39 00 00 40 00 00 02 6F 08
-				/* FPR area RGB[11:0] setting */
-				39 00 00 40 00 00 07 D0 00 00 07 F1 00 00
-				39 00 00 40 00 00 06 F0 55 AA 52 08 07
-				39 00 00 40 00 00 02 D9 40
-				/* RCN ON */
-				39 00 00 40 00 00 02 C0 01
-				/* normal dbv  0x07FF,  HBM 0x0FFF */
-				39 00 00 40 00 00 03 51 07 FF
-				39 00 00 40 00 00 02 6F 01
-				/* FPR center postion x[11:0], y[11:0] */
-				39 00 00 40 00 00 05 88 02 62 09 8C
-				/* alpha for AA */
-				39 00 00 40 00 00 03 87 11 11
-				39 00 00 40 00 00 02 88 01
-				39 00 00 00 00 00 02 85 01
-			];
-			mi,mdss-dsi-local-hbm-normal-green-500nit-command-update  = <0x87 15 2>, <0x51 12 2>;
-			mi,mdss-dsi-local-hbm-normal-green-500nit-command-state = "dsi_lp_mode";
-
 			mi,mdss-dsi-local-hbm-off-to-normal-command = [
 				/* Normal Mode DBV */
 				39 00 00 00 00 00 02 53 20
@@ -1245,37 +1183,6 @@
 			];
 			mi,mdss-dsi-local-hbm-hlpm-white-110nit-command-update  = <0x87 20 2>, <0x51 17 2>, <0xD0 13 6>;
 			mi,mdss-dsi-local-hbm-hlpm-white-110nit-command-state = "dsi_hs_mode";
-
-			mi,mdss-dsi-local-hbm-normal-green-500nit-command = [
-				39 00 00 00 00 00 06 F0 55 AA 52 08 00
-				39 00 00 40 00 00 02 6F 17
-				/* normal dbv  0x07FF,  HBM 0x0FFF */
-				39 00 00 40 00 00 03 B2 07 FF
-				/* EM-1 pluse */
-				39 00 00 40 00 00 02 6F 1F
-				39 00 00 40 00 00 03 B2 00 50
-				39 00 00 40 00 00 06 F0 55 AA 52 08 02
-				/* No smooth mode */
-				39 00 00 40 00 00 02 D1 01
-				39 00 00 40 00 00 02 6F 08
-				/* FPR area RGB[11:0] setting */
-				39 00 00 40 00 00 07 D0 00 00 07 F1 00 00
-				39 00 00 40 00 00 06 F0 55 AA 52 08 07
-				39 00 00 40 00 00 02 D9 40
-				/* RCN ON */
-				39 00 00 40 00 00 02 C0 01
-				/* normal dbv  0x07FF,  HBM 0x0FFF */
-				39 00 00 40 00 00 03 51 07 FF
-				39 00 00 40 00 00 02 6F 01
-				/* FPR center postion x[11:0], y[11:0] */
-				39 00 00 40 00 00 05 88 02 62 09 8C
-				/* alpha for AA */
-				39 00 00 40 00 00 03 87 11 11
-				39 00 00 40 00 00 02 88 01
-				39 00 00 00 00 00 02 85 01
-			];
-			mi,mdss-dsi-local-hbm-normal-green-500nit-command-update  = <0x87 15 2>, <0x51 12 2>;
-			mi,mdss-dsi-local-hbm-normal-green-500nit-command-state = "dsi_lp_mode";
 
 			mi,mdss-dsi-local-hbm-off-to-normal-command = [
 				/* Normal Mode DBV */

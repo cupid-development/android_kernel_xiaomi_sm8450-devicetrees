@@ -932,25 +932,6 @@
 			mi,mdss-dsi-local-hbm-hlpm-white-110nit-command-update = <0x87 13 3>, <0xD0 8 6>;
 			mi,mdss-dsi-local-hbm-hlpm-white-110nit-command-state = "dsi_hs_mode";
 
-			mi,mdss-dsi-local-hbm-normal-green-500nit-command = [
-				39 00 00 00 00 00 06 F0 55 AA 52 08 00
-				39 00 00 40 00 00 02 6F 31
-				39 00 00 40 00 00 02 DF 22
-				39 00 00 40 00 00 06 F0 55 AA 52 08 02
-				/*FPR area RGB[11:0] setting*/
-				39 00 00 40 00 00 07 D0 00 00 07 BC 00 00
-				39 00 00 00 00 00 06 F0 55 AA 52 08 00
-				39 00 00 40 00 00 02 6F 4C
-				39 00 00 40 00 00 03 DF 05 20
-				/*FPR center postion x[11:0], y[11:0]*/
-				39 00 00 40 00 00 06 88 01 02 62 09 8C
-				/*alpha for AA*/
-				39 00 00 00 00 00 04 87 25 11 11
-			];
-			/* <mipi_address  update_index  update_length> */
-			mi,mdss-dsi-local-hbm-normal-green-500nit-command-update = <0x87 9 3>, <0xDF 7 2>;
-			mi,mdss-dsi-local-hbm-normal-green-500nit-command-state = "dsi_lp_mode";
-
 			mi,mdss-dsi-local-hbm-off-to-normal-command = [
 				39 00 00 00 00 00 02 53 20
 				39 00 00 40 00 00 03 51 07 FF
@@ -1150,25 +1131,6 @@
 			];
 			mi,mdss-dsi-local-hbm-hlpm-white-110nit-command-update = <0x87 13 3>, <0xD0 8 6>;
 			mi,mdss-dsi-local-hbm-hlpm-white-110nit-command-state = "dsi_hs_mode";
-
-			mi,mdss-dsi-local-hbm-normal-green-500nit-command = [
-				39 00 00 00 00 00 06 F0 55 AA 52 08 00
-				39 00 00 40 00 00 02 6F 31
-				39 00 00 40 00 00 02 DF 22
-				39 00 00 40 00 00 06 F0 55 AA 52 08 02
-				/*FPR area RGB[11:0] setting*/
-				39 00 00 40 00 00 07 D0 00 00 07 BC 00 00
-				39 00 00 00 00 00 06 F0 55 AA 52 08 00
-				39 00 00 40 00 00 02 6F 4C
-				39 00 00 40 00 00 03 DF 05 20
-				/*FPR center postion x[11:0], y[11:0]*/
-				39 00 00 40 00 00 06 88 01 02 62 09 8C
-				/*alpha for AA*/
-				39 00 00 00 00 00 04 87 25 11 11
-			];
-			/* <mipi_address  update_index  update_length> */
-			mi,mdss-dsi-local-hbm-normal-green-500nit-command-update = <0x87 9 3>, <0xDF 7 2>;
-			mi,mdss-dsi-local-hbm-normal-green-500nit-command-state = "dsi_lp_mode";
 
 			mi,mdss-dsi-local-hbm-off-to-normal-command = [
 				39 00 00 00 00 00 02 53 20
@@ -1370,25 +1332,6 @@
 			];
 			mi,mdss-dsi-local-hbm-hlpm-white-110nit-command-update = <0x87 13 3>, <0xD0 8 6>;
 			mi,mdss-dsi-local-hbm-hlpm-white-110nit-command-state = "dsi_hs_mode";
-
-			mi,mdss-dsi-local-hbm-normal-green-500nit-command = [
-				39 00 00 00 00 00 06 F0 55 AA 52 08 00
-				39 00 00 40 00 00 02 6F 31
-				39 00 00 40 00 00 02 DF 22
-				39 00 00 40 00 00 06 F0 55 AA 52 08 02
-				/*FPR area RGB[11:0] setting*/
-				39 00 00 40 00 00 07 D0 00 00 07 BC 00 00
-				39 00 00 00 00 00 06 F0 55 AA 52 08 00
-				39 00 00 40 00 00 02 6F 4C
-				39 00 00 40 00 00 03 DF 05 20
-				/*FPR center postion x[11:0], y[11:0]*/
-				39 00 00 40 00 00 06 88 01 02 62 09 8C
-				/*alpha for AA*/
-				39 00 00 00 00 00 04 87 25 11 11
-			];
-			/* <mipi_address  update_index  update_length> */
-			mi,mdss-dsi-local-hbm-normal-green-500nit-command-update = <0x87 9 3>, <0xDF 7 2>;
-			mi,mdss-dsi-local-hbm-normal-green-500nit-command-state = "dsi_lp_mode";
 
 			mi,mdss-dsi-local-hbm-off-to-normal-command = [
 				39 00 00 00 00 00 02 53 20

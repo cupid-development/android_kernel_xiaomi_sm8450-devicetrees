@@ -759,22 +759,6 @@
 			mi,mdss-dsi-local-hbm-hlpm-white-110nit-command-update = <0x51 2 2>, <0x87 11 2>, <0xD0 9 6>;
 			mi,mdss-dsi-local-hbm-hlpm-white-110nit-command-state = "dsi_lp_mode";
 
-			mi,mdss-dsi-local-hbm-normal-green-500nit-command = [
-				39 00 00 00 00 00 06 F0 55 AA 52 08 02
-				39 00 00 40 00 00 02 6F 08
-				/*FPR area RGB[11:0] setting*/
-				39 00 00 40 00 00 07 D0 00 00 08 A8 00 00
-				/*FPR center postion x[11:0], y[11:0]*/
-				39 00 00 40 00 00 05 88 02 1C 08 73
-				/*alpha for AA*/
-				39 00 00 40 00 00 03 87 0F FF
-				39 00 00 40 00 00 02 6F 02
-				39 00 00 00 34 00 02 87 05
-			];
-			/* <mipi_address  update_index  update_length> */
-			mi,mdss-dsi-local-hbm-normal-green-500nit-command-update = <0x87 4 2>;
-			mi,mdss-dsi-local-hbm-normal-green-500nit-command-state = "dsi_lp_mode";
-
 			mi,mdss-dsi-local-hbm-off-to-normal-command = [
 				39 00 00 00 00 00 02 53 20
 				39 00 00 40 00 00 03 51 07 FF
@@ -1025,22 +1009,6 @@
 			mi,mdss-dsi-local-hbm-hlpm-white-110nit-command-update = <0x51 2 2>, <0x87 19 2>, <0xD0 17 6>;
 			mi,mdss-dsi-local-hbm-hlpm-white-110nit-command-state = "dsi_lp_mode";
 
-			mi,mdss-dsi-local-hbm-normal-green-500nit-command = [
-				39 00 00 00 00 00 06 F0 55 AA 52 08 02
-				39 00 00 40 00 00 02 6F 08
-				/*FPR area RGB[11:0] setting*/
-				39 00 00 40 00 00 07 D0 00 00 08 A8 00 00
-				/*FPR center postion x[11:0], y[11:0]*/
-				39 00 00 40 00 00 05 88 02 1C 08 73
-				/*alpha for AA*/
-				39 00 00 40 00 00 03 87 0F FF
-				39 00 00 40 00 00 02 6F 02
-				39 00 00 00 1B 00 02 87 05
-			];
-			/* <mipi_address  update_index  update_length> */
-			mi,mdss-dsi-local-hbm-normal-green-500nit-command-update = <0x87 4 2>;
-			mi,mdss-dsi-local-hbm-normal-green-500nit-command-state = "dsi_lp_mode";
-
 			mi,mdss-dsi-local-hbm-off-to-normal-command = [
 				39 00 00 00 00 00 02 53 20
 				39 00 00 40 00 00 03 51 07 FF
@@ -1290,22 +1258,6 @@
 			];
 			mi,mdss-dsi-local-hbm-hlpm-white-110nit-command-update = <0x51 2 2>, <0x87 19 2>, <0xD0 17 6>;
 			mi,mdss-dsi-local-hbm-hlpm-white-110nit-command-state = "dsi_lp_mode";
-
-			mi,mdss-dsi-local-hbm-normal-green-500nit-command = [
-				39 00 00 00 00 00 06 F0 55 AA 52 08 02
-				39 00 00 40 00 00 02 6F 08
-				/*FPR area RGB[11:0] setting*/
-				39 00 00 40 00 00 07 D0 00 00 08 A8 00 00
-				/*FPR center postion x[11:0], y[11:0]*/
-				39 00 00 40 00 00 05 88 02 1C 08 73
-				/*alpha for AA*/
-				39 00 00 40 00 00 03 87 0F FF
-				39 00 00 40 00 00 02 6F 02
-				39 00 00 00 23 00 02 87 05
-			];
-			/* <mipi_address  update_index  update_length> */
-			mi,mdss-dsi-local-hbm-normal-green-500nit-command-update = <0x87 4 2>;
-			mi,mdss-dsi-local-hbm-normal-green-500nit-command-state = "dsi_lp_mode";
 
 			mi,mdss-dsi-local-hbm-off-to-normal-command = [
 				39 00 00 00 00 00 02 53 20

@@ -139,38 +139,6 @@
 				];
 				mi,mdss-dsi-local-hbm-normal-white-110nit-command-state = "dsi_hs_mode";
 
-				mi,mdss-dsi-local-hbm-normal-green-500nit-command = [
-					/* Local HBM setting*/
-					39 00 00 40 00 00 03 F0 5A 5A
-					39 00 00 40 00 00 04 B0 01 DC 1F
-					39 00 00 40 00 00 10 1F
-						02 00 00 00 00 24 09 1F 35 FA 3F 2D 09 AF 86
-					39 00 00 40 00 00 04 B0 02 AC 66
-					39 00 00 40 00 00 03 66 0F FF
-					39 00 00 40 00 00 04 B0 01 6D 66
-					39 00 00 40 00 00 13 66
-						00 40 14 02 90 52 0A 41 48 1C 27 FF FF FF FF FF
-						FF FF
-					39 00 00 40 00 00 04 B0 01 59 66
-					39 00 00 40 00 00 0B 66
-						00 70 00 5C 00 00 70 00 5C 00    /* Green 500nit */
-					39 00 00 40 00 00 04 B0 01 B5 66
-					39 00 00 40 00 00 37 66
-						14 01 DE 2A 43 A2 4F 66 CC 80 08 00 80 08 00 80
-						08 00 14 01 DE 2A 43 A2 4F 66 CC 80 08 00 80 08
-						00 80 08 00 14 01 DE 2A 43 A2 4F 66 CC 80 08 00
-						80 08 00 80 08 00
-					39 00 00 40 00 00 04 B0 01 EB 66
-					39 00 00 40 00 00 37 66
-						14 61 EE 2A 43 A2 4F 66 CC 80 08 00 80 08 00 80
-						08 00 14 61 EE 2A 43 A2 4F 66 CC 80 08 00 80 08
-						00 80 08 00 14 61 EE 2A 43 A2 4F 66 CC 80 08 00
-						80 08 00 80 08 00
-					39 00 00 40 00 00 02 53 30    /* 0x30 Local HBM transition */
-					39 00 00 00 00 00 03 F0 A5 A5
-				];
-				mi,mdss-dsi-local-hbm-normal-green-500nit-command-state = "dsi_hs_mode";
-
 				mi,mdss-dsi-local-hbm-off-to-normal-command = [
 					/* Local HBM Off -> normal */
 					39 00 00 40 00 00 03 F0 5A 5A

@@ -139,21 +139,6 @@ mi,mdss-dsi-local-hbm-hlpm-white-110nit-command = [
 mi,mdss-dsi-local-hbm-hlpm-white-110nit-command-update = <0x87 114 2>;
 mi,mdss-dsi-local-hbm-hlpm-white-110nit-command-state = "dsi_hs_mode";
 
-mi,mdss-dsi-local-hbm-normal-green-500nit-command = [
-	#include "dsi-panel-l2s-42-02-0b-dsc-cmd-lhbm-common.dtsi"
-	39 00 00 40 00 00 06 F0 55 AA 52 08 00
-	39 00 00 40 00 00 02 6F 2B
-	39 00 00 40 00 00 07 DF 00 00 1F FF 00 00
-	39 00 00 40 00 00 02 6F 01
-	39 00 00 40 00 00 03 87 0B AC
-	39 00 00 40 00 00 03 51 3F FF
-	39 00 00 40 00 00 02 53 20
-	39 00 00 40 00 00 02 87 21
-	39 00 00 00 00 00 01 85
-];
-mi,mdss-dsi-local-hbm-normal-green-500nit-command-update = <0x87 114 2>;
-mi,mdss-dsi-local-hbm-normal-green-500nit-command-state = "dsi_hs_mode";
-
 mi,mdss-dsi-local-hbm-off-to-normal-command = [
 	39 00 00 40 00 00 02 53 20
 	39 00 00 40 00 00 01 86
