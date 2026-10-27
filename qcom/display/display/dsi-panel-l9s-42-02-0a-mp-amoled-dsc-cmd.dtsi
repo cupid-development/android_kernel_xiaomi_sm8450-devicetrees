@@ -583,6 +583,7 @@
 	mi,local-hbm-enabled;
 	mi,doze-hbm-dbv-level = <245>;
 	mi,doze-lbm-dbv-level = <20>;
+	mi,power-off-delay-ms = <1 0>;
 	mi,fod-low-brightness-clone-threshold = <38>;
 	mi,fod-low-brightness-lux-threshold = <1>;
 	mi,local-hbm-white-1000nit-update-flag;
