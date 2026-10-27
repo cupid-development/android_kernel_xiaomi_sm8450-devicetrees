@@ -605,6 +605,7 @@
 	mi,local-hbm-enabled;
 	mi,doze-hbm-dbv-level = <245>;
 	mi,doze-lbm-dbv-level = <20>;
+	mi,timing-switch-wait-vblank;
 	mi,fod-low-brightness-clone-threshold = <38>;
 	mi,fod-low-brightness-lux-threshold = <1>;
 	mi,mdss-dsi-fac-bl-max-level = <2047>;
