@@ -133,6 +133,7 @@ qcom,mdss-dsi-display-timings {
 	/* AOD CONFIG*/
 	mi,doze-hbm-dbv-level = <245>;
 	mi,doze-lbm-dbv-level = <20>;
+	mi,aod-nolp-command-enabled;
 	/* IRQ CHECK: IRQF_ONESHOT | IRQF_TRIGGER_LOW */
 	mi,esd-err-irq-gpio = <&tlmm 116 0x2008>;
 	mi,panel-ignore-esd-in-aod;

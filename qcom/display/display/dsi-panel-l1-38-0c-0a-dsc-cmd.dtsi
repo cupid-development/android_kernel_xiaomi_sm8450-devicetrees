@@ -64,6 +64,7 @@
 
 		mi,doze-hbm-dbv-level = <229>;
 		mi,doze-lbm-dbv-level = <16>;
+		mi,aod-nolp-command-enabled;
 
 		mi,mdss-dsi-panel-dc-threshold = <450>;
 		mi,dc-feature-enabled;

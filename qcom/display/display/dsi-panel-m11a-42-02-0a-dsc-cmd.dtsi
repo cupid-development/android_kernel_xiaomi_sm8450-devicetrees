@@ -767,6 +767,7 @@
 
 	mi,doze-hbm-dbv-level = <252>;
 	mi,doze-lbm-dbv-level = <20>;
+	mi,aod-nolp-command-enabled;
 
 	mi,thermal-dimming-flag;
 	mi,disable-ic-dimming-flag;
