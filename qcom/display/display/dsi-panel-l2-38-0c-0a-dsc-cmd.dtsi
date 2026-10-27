@@ -64,6 +64,7 @@
 
 		mi,doze-hbm-dbv-level = <229>;
 		mi,doze-lbm-dbv-level = <16>;
+		mi,batch-doze-lbm-reg53 = <0x20 0x25>;
 		mi,aod-nolp-command-enabled;
 
 		qcom,mdss-dsi-display-timings {
