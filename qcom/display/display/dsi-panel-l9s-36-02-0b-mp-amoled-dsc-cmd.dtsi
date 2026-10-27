@@ -594,14 +594,11 @@
 	mi,doze-hbm-dbv-level = <245>;
 	mi,doze-lbm-dbv-level = <20>;
 	mi,timing-switch-wait-vblank;
-	mi,local-hbm-white-1000nit-update-flag;
-	mi,local-hbm-white-110nit-update-flag;
 	mi,local-hbm-green-500nit-update-flag;
 	mi,local-hbm-alpha-table = "l9s-36-02-0b";
 	mi,local-hbm-white-param-offset = <0>;
 	mi,local-hbm-alpha-max = <0x1fff>;
 	mi,local-hbm-b2-reg-min = <0x148>;
-	mi,need-fod-animal-in-normal-enabled;
 
 	mi,flat-need-sync-te;
 

@@ -823,8 +823,6 @@
 	mi,dimming-node = <0 200 450 800 4095>;
 
 	mi,local-hbm-enabled;
-	mi,local-hbm-white-1000nit-update-flag;
-	mi,local-hbm-white-110nit-update-flag;
 	mi,local-hbm-alpha-table = "l12-36-02-0b";
 	mi,local-hbm-white-param-offset = <6>;
 	mi,local-hbm-white-scale = <109 108 109>;

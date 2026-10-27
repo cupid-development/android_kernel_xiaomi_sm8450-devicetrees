@@ -51,7 +51,6 @@
 
 		mi,local-hbm-enabled;
 		mi,local-hbm-ui-ready-delay-num-frame = <4>; /* 4 frame */
-		mi,need-fod-animal-in-normal-enabled;
 
 		mi,panel-on-dimming-delay = <120>;
 		mi,hbm-reg53-enabled;
