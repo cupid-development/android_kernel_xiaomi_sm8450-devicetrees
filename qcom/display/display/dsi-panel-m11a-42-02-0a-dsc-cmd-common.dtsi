@@ -331,23 +331,6 @@
 			];
 			mi,mdss-dsi-local-hbm-off-to-llpm-command-state = "dsi_hs_mode";
 
-			/* round corner */
-			mi,mdss-dsi-round-corner-on-command = [
-				/* Page 07 */
-				39 00 00 00 00 00 06 F0 55 AA 52 08 07
-				/* Round on */
-				15 00 00 00 00 00 02 C0 B1
-			];
-			mi,mdss-dsi-round-corner-on-command-state = "dsi_lp_mode";
-
-			mi,mdss-dsi-round-corner-off-command = [
-				/* Page 07 */
-				39 00 00 00 00 00 06 F0 55 AA 52 08 07
-				/* Round off */
-				15 00 00 00 00 00 02 C0 B0
-			];
-			mi,mdss-dsi-round-corner-off-command-state = "dsi_lp_mode";
-
 			mi,mdss-dsi-auto-update-gamma-command = [
 				39 00 00 40 00 00 06 F0 55 AA 52 08 02
 				15 00 00 00 00 00 02 CC 00

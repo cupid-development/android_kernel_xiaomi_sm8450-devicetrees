@@ -833,7 +833,6 @@
 	mi,doze-hbm-dbv-level = <252>;
 	mi,doze-lbm-dbv-level = <20>;
 	mi,post-unprepare-delay-ms = <10>;
-	mi,ddic-round-corner-enabled;
 
 	mi,local-hbm-ui-ready-delay-num-frame = <4>; /* 4 frame */
 
@@ -1057,34 +1056,6 @@
 				39 00 00 00 00 00 02 BE 45
 			];
 			mi,mdss-dsi-doze-lbm-nolp-command-state = "dsi_lp_mode";
-
-			mi,mdss-dsi-round-corner-on-command = [
-				/* Page 07 */
-				39 00 00 00 00 00 06 F0 55 AA 52 08 07
-				/* Round on */
-				39 00 00 00 00 00 02 C0 A1
-			];
-			mi,mdss-dsi-round-corner-on-command-state = "dsi_lp_mode";
-
-			mi,mdss-dsi-round-corner-off-command = [
-				/* Page 07 */
-				39 00 00 00 00 00 06 F0 55 AA 52 08 07
-				/* Round off */
-				39 00 00 40 00 00 02 C0 07
-				39 00 00 40 00 00 02 C1 00
-				39 00 00 40 00 00 02 C2 00
-				39 00 00 40 00 00 02 C3 00
-				39 00 00 40 00 00 02 C4 00
-				39 00 00 40 00 00 02 C5 00
-				39 00 00 40 00 00 02 C6 00
-				39 00 00 40 00 00 02 C7 00
-				39 00 00 40 00 00 02 C8 00
-				39 00 00 40 00 00 02 C9 00
-				39 00 00 40 00 00 02 CA 00
-				39 00 00 40 00 00 02 CB 00
-				39 00 00 00 00 00 02 CC 00
-			];
-			mi,mdss-dsi-round-corner-off-command-state = "dsi_lp_mode";
 
 			mi,mdss-dsi-dimming-8frame-command = [
 				39 00 00 00 00 00 06 F0 55 AA 52 08 00
@@ -1320,34 +1291,6 @@
 				39 00 00 00 00 00 02 BE 45
 			];
 			mi,mdss-dsi-doze-lbm-nolp-command-state = "dsi_lp_mode";
-
-			mi,mdss-dsi-round-corner-on-command = [
-				/* Page 07 */
-				39 00 00 00 00 00 06 F0 55 AA 52 08 07
-				/* Round on */
-				39 00 00 00 00 00 02 C0 A1
-			];
-			mi,mdss-dsi-round-corner-on-command-state = "dsi_lp_mode";
-
-			mi,mdss-dsi-round-corner-off-command = [
-				/* Page 07 */
-				39 00 00 00 00 00 06 F0 55 AA 52 08 07
-				/* Round off */
-				39 00 00 40 00 00 02 C0 07
-				39 00 00 40 00 00 02 C1 00
-				39 00 00 40 00 00 02 C2 00
-				39 00 00 40 00 00 02 C3 00
-				39 00 00 40 00 00 02 C4 00
-				39 00 00 40 00 00 02 C5 00
-				39 00 00 40 00 00 02 C6 00
-				39 00 00 40 00 00 02 C7 00
-				39 00 00 40 00 00 02 C8 00
-				39 00 00 40 00 00 02 C9 00
-				39 00 00 40 00 00 02 CA 00
-				39 00 00 40 00 00 02 CB 00
-				39 00 00 00 00 00 02 CC 00
-			];
-			mi,mdss-dsi-round-corner-off-command-state = "dsi_lp_mode";
 
 			mi,mdss-dsi-dimming-8frame-command = [
 				39 00 00 00 00 00 06 F0 55 AA 52 08 00
@@ -1585,34 +1528,6 @@
 				39 00 00 00 00 00 02 BE 45
 			];
 			mi,mdss-dsi-doze-lbm-nolp-command-state = "dsi_lp_mode";
-
-			mi,mdss-dsi-round-corner-on-command = [
-				/* Page 07 */
-				39 00 00 00 00 00 06 F0 55 AA 52 08 07
-				/* Round on */
-				39 00 00 00 00 00 02 C0 A1
-			];
-			mi,mdss-dsi-round-corner-on-command-state = "dsi_lp_mode";
-
-			mi,mdss-dsi-round-corner-off-command = [
-				/* Page 07 */
-				39 00 00 00 00 00 06 F0 55 AA 52 08 07
-				/* Round off */
-				39 00 00 40 00 00 02 C0 07
-				39 00 00 40 00 00 02 C1 00
-				39 00 00 40 00 00 02 C2 00
-				39 00 00 40 00 00 02 C3 00
-				39 00 00 40 00 00 02 C4 00
-				39 00 00 40 00 00 02 C5 00
-				39 00 00 40 00 00 02 C6 00
-				39 00 00 40 00 00 02 C7 00
-				39 00 00 40 00 00 02 C8 00
-				39 00 00 40 00 00 02 C9 00
-				39 00 00 40 00 00 02 CA 00
-				39 00 00 40 00 00 02 CB 00
-				39 00 00 00 00 00 02 CC 00
-			];
-			mi,mdss-dsi-round-corner-off-command-state = "dsi_lp_mode";
 
 			mi,mdss-dsi-dimming-8frame-command = [
 				39 00 00 00 00 00 06 F0 55 AA 52 08 00

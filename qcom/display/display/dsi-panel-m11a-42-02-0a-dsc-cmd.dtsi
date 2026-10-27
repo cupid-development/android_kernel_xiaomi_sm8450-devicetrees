@@ -736,8 +736,6 @@
 
 	mi,dsc-rc-profile = "nt37801";
 
-	mi,ddic-round-corner-enabled;
-
 	mi,local-hbm-enabled;
 	mi,local-hbm-alpha-table = "m11a-42-02-0a";
 	mi,local-hbm-white-param-offset = <0>;

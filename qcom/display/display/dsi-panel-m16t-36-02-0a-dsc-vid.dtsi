@@ -205,8 +205,6 @@
 	mi,esd-err-irq-gpio = <&tlmm 116 0x2008>;
 	mi,panel-ignore-esd-in-aod;
 
-	mi,ddic-round-corner-enabled;
-
 	qcom,mdss-dsi-display-timings {
 		timing@0{
 

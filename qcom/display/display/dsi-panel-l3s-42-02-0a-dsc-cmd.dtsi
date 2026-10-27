@@ -594,8 +594,6 @@
 	mi,local-hbm-alpha-table = "nvt";
 	mi,local-hbm-white-param-offset = <6>;
 
-	mi,ddic-round-corner-enabled;
-
 	mi,doze-hbm-dbv-level = <252>;
 	mi,doze-lbm-dbv-level = <20>;
 	mi,post-unprepare-delay-ms = <1>;
@@ -839,21 +837,6 @@
 				39 00 00 00 00 00 02 39 00
 			];
 			mi,mdss-dsi-local-hbm-off-to-llpm-command-state = "dsi_hs_mode";
-
-			mi,mdss-dsi-round-corner-on-command = [
-				/* Page 07 */
-				39 00 00 00 00 00 06 F0 55 AA 52 08 07
-				/* Round on */
-				39 00 00 00 00 00 03 C0 05 02
-			];
-			mi,mdss-dsi-round-corner-on-command-state = "dsi_lp_mode";
-			mi,mdss-dsi-round-corner-off-command = [
-				/* Page 07 */
-				39 00 00 00 00 00 06 F0 55 AA 52 08 07
-				/* Round off */
-				39 00 00 00 00 00 03 C0 00 02
-			];
-			mi,mdss-dsi-round-corner-off-command-state = "dsi_lp_mode";
 		};
 
 		timing@1{ /* 120 hz */
@@ -1122,21 +1105,6 @@
 				39 00 00 00 00 00 02 39 00
 			];
 			mi,mdss-dsi-local-hbm-off-to-llpm-command-state = "dsi_hs_mode";
-
-			mi,mdss-dsi-round-corner-on-command = [
-				/* Page 07 */
-				39 00 00 00 00 00 06 F0 55 AA 52 08 07
-				/* Round on */
-				39 00 00 00 00 00 03 C0 05 02
-			];
-			mi,mdss-dsi-round-corner-on-command-state = "dsi_lp_mode";
-			mi,mdss-dsi-round-corner-off-command = [
-				/* Page 07 */
-				39 00 00 00 00 00 06 F0 55 AA 52 08 07
-				/* Round off */
-				39 00 00 00 00 00 03 C0 00 02
-			];
-			mi,mdss-dsi-round-corner-off-command-state = "dsi_lp_mode";
 		};
 
 		timing@2{ /* 90 hz */
@@ -1405,21 +1373,6 @@
 				39 00 00 00 00 00 02 39 00
 			];
 			mi,mdss-dsi-local-hbm-off-to-llpm-command-state = "dsi_hs_mode";
-
-			mi,mdss-dsi-round-corner-on-command = [
-				/* Page 07 */
-				39 00 00 00 00 00 06 F0 55 AA 52 08 07
-				/* Round on */
-				39 00 00 00 00 00 03 C0 05 02
-			];
-			mi,mdss-dsi-round-corner-on-command-state = "dsi_lp_mode";
-			mi,mdss-dsi-round-corner-off-command = [
-				/* Page 07 */
-				39 00 00 00 00 00 06 F0 55 AA 52 08 07
-				/* Round off */
-				39 00 00 00 00 00 03 C0 00 02
-			];
-			mi,mdss-dsi-round-corner-off-command-state = "dsi_lp_mode";
 		};
 	};
 };
