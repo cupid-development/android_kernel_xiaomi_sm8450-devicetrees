@@ -161,17 +161,6 @@
 				];
 				qcom,mdss-dsi-on-command-state = "dsi_lp_mode";
 
-				mi,mdss-dsi-flat-mode-on-command = [
-					39 00 00 40 00 00 02 2F 32
-					39 00 00 00 00 00 02 5F 00
-				];
-				mi,mdss-dsi-flat-mode-on-command-state = "dsi_lp_mode";
-
-				mi,mdss-dsi-flat-mode-off-command = [
-					39 00 00 00 00 00 02 5F 01
-				];
-				mi,mdss-dsi-flat-mode-off-command-state = "dsi_lp_mode";
-
 				qcom,mdss-dsi-nolp-command = [
 					39 00 00 40 00 00 02 65 00
 					39 00 00 40 00 00 02 38 00
@@ -304,17 +293,6 @@
 				];
 				qcom,mdss-dsi-on-command-state = "dsi_lp_mode";
 
-				mi,mdss-dsi-flat-mode-on-command = [
-					39 00 00 00 00 00 02 2F 02
-				];
-				mi,mdss-dsi-flat-mode-on-command-state = "dsi_lp_mode";
-
-				mi,mdss-dsi-flat-mode-off-command = [
-					39 00 00 40 00 00 02 2F 00
-					39 00 00 00 00 00 02 26 00
-				];
-				mi,mdss-dsi-flat-mode-off-command-state = "dsi_lp_mode";
-
 				qcom,mdss-dsi-nolp-command = [
 					39 00 00 40 00 00 02 65 00
 					39 00 00 40 00 00 02 38 00
@@ -428,16 +406,6 @@
 					05 00 00 00 00 00 01 29
 				];
 				qcom,mdss-dsi-on-command-state = "dsi_lp_mode";
-
-				mi,mdss-dsi-flat-mode-on-command = [
-					39 00 00 00 00 00 02 2F 03
-				];
-				mi,mdss-dsi-flat-mode-on-command-state = "dsi_lp_mode";
-
-				mi,mdss-dsi-flat-mode-off-command = [
-					39 00 00 00 00 00 02 2F 01
-				];
-                                mi,mdss-dsi-flat-mode-off-command-state = "dsi_lp_mode";
 
 				qcom,mdss-dsi-nolp-command = [
 					39 00 00 40 00 00 02 65 00

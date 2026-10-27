@@ -485,22 +485,6 @@
 				39 00 00 00 00 00 03 F0 A5 A5
 			];
 			mi,mdss-dsi-doze-lbm-command-state = "dsi_lp_mode";
-
-			mi,mdss-dsi-flat-mode-on-command = [
-				39 00 00 40 00 00 03 F0 5A 5A
-				39 00 00 40 00 00 04 B0 02 79 92
-				15 00 00 40 00 00 02 92 25
-				39 00 00 00 00 00 03 F0 A5 A5
-			];
-			mi,mdss-dsi-flat-mode-on-command-state = "dsi_lp_mode";
-
-			mi,mdss-dsi-flat-mode-off-command = [
-				39 00 00 40 00 00 03 F0 5A 5A
-				39 00 00 40 00 00 04 B0 02 79 92
-				15 00 00 40 00 00 02 92 05
-				39 00 00 00 00 00 03 F0 A5 A5
-			];
-			mi,mdss-dsi-flat-mode-off-command-state = "dsi_lp_mode";
 		};
 		/* 120 hz */
 		timing@1{
@@ -542,22 +526,6 @@
 				39 00 00 00 00 00 03 F0 A5 A5
 			];
 			mi,mdss-dsi-doze-lbm-command-state = "dsi_lp_mode";
-
-			mi,mdss-dsi-flat-mode-on-command = [
-				39 00 00 40 00 00 03 F0 5A 5A
-				39 00 00 40 00 00 04 B0 02 79 92
-				15 00 00 40 00 00 02 92 25
-				39 00 00 00 00 00 03 F0 A5 A5
-			];
-			mi,mdss-dsi-flat-mode-on-command-state = "dsi_lp_mode";
-
-			mi,mdss-dsi-flat-mode-off-command = [
-				39 00 00 40 00 00 03 F0 5A 5A
-				39 00 00 40 00 00 04 B0 02 79 92
-				15 00 00 40 00 00 02 92 05
-				39 00 00 00 00 00 03 F0 A5 A5
-			];
-			mi,mdss-dsi-flat-mode-off-command-state = "dsi_lp_mode";
 		};
 		/* 90 hz */
 		timing@2{
@@ -598,22 +566,6 @@
 			];
 			mi,mdss-dsi-doze-hbm-command-state = "dsi_lp_mode";
 			mi,mdss-dsi-doze-lbm-command-state = "dsi_lp_mode";
-
-			mi,mdss-dsi-flat-mode-on-command = [
-				39 00 00 40 00 00 03 F0 5A 5A
-				39 00 00 40 00 00 04 B0 02 79 92
-				15 00 00 40 00 00 02 92 25
-				39 00 00 00 00 00 03 F0 A5 A5
-			];
-			mi,mdss-dsi-flat-mode-on-command-state = "dsi_lp_mode";
-
-			mi,mdss-dsi-flat-mode-off-command = [
-				39 00 00 40 00 00 03 F0 5A 5A
-				39 00 00 40 00 00 04 B0 02 79 92
-				15 00 00 40 00 00 02 92 05
-				39 00 00 00 00 00 03 F0 A5 A5
-			];
-			mi,mdss-dsi-flat-mode-off-command-state = "dsi_lp_mode";
 		};
 	};
 };

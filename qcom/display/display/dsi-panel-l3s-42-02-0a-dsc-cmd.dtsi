@@ -596,9 +596,6 @@
 
 	mi,ddic-round-corner-enabled;
 
-	mi,flat-update-flag;
-	mi,flat-need-sync-te;
-
 	mi,dc-feature-enabled;
 	mi,dc-feature-type = "lut_compatible_backlight";
 	mi,dc-update-flag;
@@ -610,8 +607,6 @@
 
 	qcom,mdss-dsi-display-timings {
 		timing@0{ /* 60 hz */
-			/*<flat on gamma, flat off gamma>*/
-			mi,mdss-flat-status-control-gamma-cfg = <0x04 0x01>;
 
 			mi,mdss-dsi-dimmingon-command = [39 00 00 00 00 00 02 53 28];
 			mi,mdss-dsi-dimmingon-command-state = "dsi_hs_mode";
@@ -625,34 +620,6 @@
 			/* <mipi_address  update_index  update_length> */
 			mi,mdss-dsi-switch-page-command-update = <0xF0 0 5>;
 			mi,mdss-dsi-switch-page-command-state = "dsi_lp_mode";
-
-			mi,mdss-dsi-flat-mode-read-pre-command = [
-				39 00 00 00 00 00 06 F0 55 AA 52 08 00
-				39 00 00 00 00 00 02 6F 3F
-			];
-			mi,mdss-dsi-flat-mode-read-pre-command-state = "dsi_lp_mode";
-
-			mi,mdss-dsi-flat-mode-on-command = [
-				/* 60 Hz */
-				39 00 00 00 00 00 02 2F 01
-				39 00 00 60 00 00 02 26 04
-				39 00 00 60 00 00 06 F0 55 AA 52 08 08
-				39 00 00 60 00 00 02 6F 07
-				39 00 00 20 00 00 05 B9 00 00 00 00
-			];
-			/* <mipi_address  update_index  update_length> */
-			mi,mdss-dsi-flat-mode-on-command-update = <0xB9 4 4>;
-			mi,mdss-dsi-flat-mode-on-command-state = "dsi_lp_mode";
-
-			mi,mdss-dsi-flat-mode-off-command = [
-				/* 60 Hz */
-				39 00 00 00 00 00 02 2F 01
-				39 00 00 60 00 00 02 26 01
-				39 00 00 60 00 00 06 F0 55 AA 52 08 08
-				39 00 00 60 00 00 02 6F 07
-				39 00 00 20 00 00 05 B9 00 00 00 18
-			];
-			mi,mdss-dsi-flat-mode-off-command-state = "dsi_lp_mode";
 
 			mi,mdss-dsi-dc-on-command = [
 				/* Page 0 */
@@ -982,8 +949,6 @@
 		};
 
 		timing@1{ /* 120 hz */
-			/*<flat on gamma, flat off gamma>*/
-			mi,mdss-flat-status-control-gamma-cfg = <0x60 0x20>;
 
 			mi,mdss-dsi-dimmingon-command = [39 00 00 00 00 00 02 53 28];
 			mi,mdss-dsi-dimmingon-command-state = "dsi_hs_mode";
@@ -1045,58 +1010,6 @@
 			/* <mipi_address  update_index  update_length> */
 			mi,mdss-dsi-switch-page-command-update = <0xF0 0 5>;
 			mi,mdss-dsi-switch-page-command-state = "dsi_lp_mode";
-
-			mi,mdss-dsi-flat-mode-read-pre-command = [
-				39 00 00 00 00 00 06 F0 55 AA 52 08 00
-				39 00 00 00 00 00 02 6F 3F
-			];
-			mi,mdss-dsi-flat-mode-read-pre-command-state = "dsi_lp_mode";
-
-			mi,mdss-dsi-flat-mode-on-command = [
-				/* 120 Hz gir cmd_1,need sync te*/
-				39 00 00 00 00 00 02 2F 02
-				39 00 00 60 00 00 06 F0 55 AA 52 08 00
-				39 00 00 60 00 00 02 6F 09
-				39 00 00 60 00 00 02 C0 60
-				39 00 00 60 00 00 06 F0 55 AA 52 08 02
-				39 00 00 60 00 00 02 CC 30
-				39 00 00 60 00 00 02 CE 01
-				39 00 00 60 00 00 06 F0 55 AA 52 08 08
-				39 00 00 60 00 00 02 6F 07
-				39 00 00 20 14 00 05 B9 00 00 00 00
-			];
-			/* <mipi_address  update_index  update_length> */
-			mi,mdss-dsi-flat-mode-on-command-update = <0xB9 9 4>;
-
-			mi,mdss-dsi-flat-mode-on-sec-command = [
-				/* 120 Hz gir cmd_2*/
-				39 00 00 00 00 00 06 F0 55 AA 52 08 02
-				39 00 00 00 00 00 02 CC 00
-			];
-			mi,mdss-dsi-flat-mode-on-command-state = "dsi_lp_mode";
-			mi,mdss-dsi-flat-mode-on-sec-command-state = "dsi_lp_mode";
-
-			mi,mdss-dsi-flat-mode-off-command = [
-				/* 120 Hz gir cmd_1,need sync te*/
-				39 00 00 00 00 00 02 2F 02
-				39 00 00 60 00 00 06 F0 55 AA 52 08 00
-				39 00 00 60 00 00 02 6F 09
-				39 00 00 60 00 00 02 C0 20
-				39 00 00 60 00 00 06 F0 55 AA 52 08 02
-				39 00 00 60 00 00 02 CC 30
-				39 00 00 60 00 00 02 CE 01
-				39 00 00 60 00 00 06 F0 55 AA 52 08 08
-				39 00 00 60 00 00 02 6F 07
-				39 00 00 20 14 00 05 B9 00 00 00 18
-			];
-
-			mi,mdss-dsi-flat-mode-off-sec-command = [
-				/* 120 Hz gir cmd_2*/
-				39 00 00 00 00 00 06 F0 55 AA 52 08 02
-				39 00 00 00 00 00 02 CC 00
-			];
-			mi,mdss-dsi-flat-mode-off-command-state = "dsi_lp_mode";
-			mi,mdss-dsi-flat-mode-off-sec-command-state = "dsi_lp_mode";
 
 			mi,mdss-dsi-doze-hbm-command = [
 				/* 60 Hz */
@@ -1360,8 +1273,6 @@
 		};
 
 		timing@2{ /* 90 hz */
-			/*<flat on gamma, flat off gamma>*/
-			mi,mdss-flat-status-control-gamma-cfg = <0x41 0x01>;
 
 			mi,mdss-dsi-dimmingon-command = [39 00 00 00 00 00 02 53 28];
 			mi,mdss-dsi-dimmingon-command-state = "dsi_hs_mode";
@@ -1423,58 +1334,6 @@
 			/* <mipi_address  update_index  update_length> */
 			mi,mdss-dsi-switch-page-command-update = <0xF0 0 5>;
 			mi,mdss-dsi-switch-page-command-state = "dsi_lp_mode";
-
-			mi,mdss-dsi-flat-mode-read-pre-command = [
-				39 00 00 00 00 00 06 F0 55 AA 52 08 00
-				39 00 00 00 00 00 02 6F 3F
-			];
-			mi,mdss-dsi-flat-mode-read-pre-command-state = "dsi_lp_mode";
-
-			mi,mdss-dsi-flat-mode-on-command = [
-				/* 90 Hz gir cmd_1,need sync te*/
-				39 00 00 00 00 00 02 2F 03
-				39 00 00 60 00 00 06 F0 55 AA 52 08 00
-				39 00 00 60 00 00 02 6F 0A
-				39 00 00 60 00 00 02 C0 41
-				39 00 00 60 00 00 06 F0 55 AA 52 08 02
-				39 00 00 60 00 00 02 CC 30
-				39 00 00 60 00 00 02 CE 01
-				39 00 00 60 00 00 06 F0 55 AA 52 08 08
-				39 00 00 60 00 00 02 6F 07
-				39 00 00 20 14 00 05 B9 00 00 00 00
-			];
-			/* <mipi_address  update_index  update_length> */
-			mi,mdss-dsi-flat-mode-on-command-update = <0xB9 9 4>;
-
-			mi,mdss-dsi-flat-mode-on-sec-command = [
-				/* 90 Hz gir cmd_2*/
-				39 00 00 00 00 00 06 F0 55 AA 52 08 02
-				39 00 00 00 00 00 02 CC 00
-			];
-			mi,mdss-dsi-flat-mode-on-command-state = "dsi_lp_mode";
-			mi,mdss-dsi-flat-mode-on-sec-command-state = "dsi_lp_mode";
-
-			mi,mdss-dsi-flat-mode-off-command = [
-				/* 90 Hz gir cmd_1,need sync te*/
-				39 00 00 00 00 00 02 2F 03
-				39 00 00 60 00 00 06 F0 55 AA 52 08 00
-				39 00 00 60 00 00 02 6F 0A
-				39 00 00 60 00 00 02 C0 01
-				39 00 00 60 00 00 06 F0 55 AA 52 08 02
-				39 00 00 60 00 00 02 CC 30
-				39 00 00 60 00 00 02 CE 01
-				39 00 00 60 00 00 06 F0 55 AA 52 08 08
-				39 00 00 60 00 00 02 6F 07
-				39 00 00 20 14 00 05 B9 00 00 00 18
-			];
-
-			mi,mdss-dsi-flat-mode-off-sec-command = [
-				/* 90 Hz gir cmd_2*/
-				39 00 00 00 00 00 06 F0 55 AA 52 08 02
-				39 00 00 00 00 00 02 CC 00
-			];
-			mi,mdss-dsi-flat-mode-off-command-state = "dsi_lp_mode";
-			mi,mdss-dsi-flat-mode-off-sec-command-state = "dsi_lp_mode";
 
 			mi,mdss-dsi-doze-hbm-command = [
 				/* 60 Hz */

@@ -600,8 +600,6 @@
 	mi,local-hbm-alpha-max = <0x1fff>;
 	mi,local-hbm-b2-reg-min = <0x148>;
 
-	mi,flat-need-sync-te;
-
 	/* IRQF_ONESHOT | IRQF_TRIGGER_LOW */
 	mi,esd-err-irq-gpio = <&tlmm 11 0x2008>;
 
@@ -622,7 +620,6 @@
 	qcom,mdss-dsi-display-timings {
 		timing@0{ /* 60hz */
 			/*<flat on gamma, flat off gamma>*/
-			mi,mdss-flat-status-control-gamma-cfg = <0x04 0x03>;
 			mi,mdss-dsi-dimmingon-command = [39 00 00 00 00 00 02 53 28];
 			mi,mdss-dsi-dimmingon-command-state = "dsi_hs_mode";
 			mi,mdss-dsi-dimmingoff-command = [39 00 00 00 00 00 02 53 20];
@@ -800,30 +797,9 @@
 				39 00 00 00 00 00 02 2C 00
 			];
 			mi,mdss-dsi-local-hbm-off-to-llpm-command-state = "dsi_hs_mode";
-
-			mi,mdss-dsi-flat-mode-on-command = [
-				/* page 0 */
-				39 00 00 00 00 00 06 F0 55 AA 52 08 00
-				/* 60Hz */
-				39 00 00 40 00 00 02 2F 04
-				/* GIR ON */
-				39 00 00 20 14 00 02 5F 00
-			];
-			mi,mdss-dsi-flat-mode-on-command-state = "dsi_hs_mode";
-
-			mi,mdss-dsi-flat-mode-off-command = [
-				/* page 0 */
-				39 00 00 00 00 00 06 F0 55 AA 52 08 00
-				/* 60Hz */
-				39 00 00 40 00 00 02 2F 03
-				/* GIR OFF */
-				39 00 00 20 14 00 02 5F 01
-			];
-			mi,mdss-dsi-flat-mode-off-command-state = "dsi_hs_mode";
 		};
 		timing@1{ /* 120hz */
 			/*<flat on gamma, flat off gamma>*/
-			mi,mdss-flat-status-control-gamma-cfg = <0x02 0x01>;
 			mi,mdss-dsi-dimmingon-command = [39 00 00 00 00 00 02 53 28];
 			mi,mdss-dsi-dimmingon-command-state = "dsi_hs_mode";
 			mi,mdss-dsi-dimmingoff-command = [39 00 00 00 00 00 02 53 20];
@@ -1001,30 +977,9 @@
 				39 00 00 00 00 00 02 2C 00
 			];
 			mi,mdss-dsi-local-hbm-off-to-llpm-command-state = "dsi_hs_mode";
-
-			mi,mdss-dsi-flat-mode-on-command = [
-				/* page 0 */
-				39 00 00 00 00 00 06 F0 55 AA 52 08 00
-				/* 120Hz */
-				39 00 00 40 00 00 02 2F 02
-				/* GIR ON */
-				39 00 00 20 14 00 02 5F 00
-			];
-			mi,mdss-dsi-flat-mode-on-command-state = "dsi_hs_mode";
-
-			mi,mdss-dsi-flat-mode-off-command = [
-				/* Page 0 */
-				39 00 00 00 00 00 06 F0 55 AA 52 08 00
-				/* 120Hz */
-				39 00 00 40 00 00 02 2F 01
-				/* GIR OFF */
-				39 00 00 20 14 00 02 5F 01
-			];
-			mi,mdss-dsi-flat-mode-off-command-state = "dsi_hs_mode";
 		};
 		timing@2{ /* 90hz */
 			/*<flat on gamma, flat off gamma>*/
-			mi,mdss-flat-status-control-gamma-cfg = <0x08 0x07>;
 			mi,mdss-dsi-dimmingon-command = [39 00 00 00 00 00 02 53 28];
 			mi,mdss-dsi-dimmingon-command-state = "dsi_hs_mode";
 			mi,mdss-dsi-dimmingoff-command = [39 00 00 00 00 00 02 53 20];
@@ -1202,26 +1157,6 @@
 				39 00 00 00 00 00 02 2C 00
 			];
 			mi,mdss-dsi-local-hbm-off-to-llpm-command-state = "dsi_hs_mode";
-
-			mi,mdss-dsi-flat-mode-on-command = [
-				/* page 0 */
-				39 00 00 00 00 00 06 F0 55 AA 52 08 00
-				/* 90Hz */
-				39 00 00 40 00 00 02 2F 08
-				/* GIR ON */
-				39 00 00 20 14 00 02 5F 00
-			];
-			mi,mdss-dsi-flat-mode-on-command-state = "dsi_hs_mode";
-
-			mi,mdss-dsi-flat-mode-off-command = [
-				/* page 0 */
-				39 00 00 00 00 00 06 F0 55 AA 52 08 00
-				/* 90Hz */
-				39 00 00 40 00 00 02 2F 07
-				/* GIR OFF */
-				39 00 00 20 14 00 02 5F 01
-			];
-			mi,mdss-dsi-flat-mode-off-command-state = "dsi_hs_mode";
 		};
 	};
 };

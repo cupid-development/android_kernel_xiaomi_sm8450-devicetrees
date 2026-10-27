@@ -152,24 +152,6 @@ qcom,mdss-dsi-display-timings {
 				39 00 00 00 00 00 03 F0 AA 00
 			];
 			mi,mdss-dsi-bl-sync-off-command-state = "dsi_lp_mode";
-			mi,mdss-dsi-flat-mode-on-command = [
-				39 00 00 00 00 00 02 5F 00
-				39 00 00 40 00 00 02 26 03
-				39 00 00 00 00 00 06 F0 55 AA 52 08 00
-				39 00 00 40 00 00 02 6F 03
-				39 00 00 00 00 00 02 C0 53
-				39 00 00 00 00 00 06 F0 55 AA 52 00 00
-			];
-			mi,mdss-dsi-flat-mode-on-command-state = "dsi_hs_mode";
-			mi,mdss-dsi-flat-mode-off-command = [
-				39 00 00 00 00 00 02 5F 01
-				39 00 00 40 00 00 02 26 00
-				39 00 00 00 00 00 06 F0 55 AA 52 08 00
-				39 00 00 40 00 00 02 6F 03
-				39 00 00 00 00 00 02 C0 20
-				39 00 00 00 00 00 06 F0 55 AA 52 00 00
-			];
-			mi,mdss-dsi-flat-mode-off-command-state = "dsi_hs_mode";
 			mi,mdss-dsi-aod-enter-command = [
 				39 00 00 00 00 00 02 39 00
 			];
