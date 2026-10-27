@@ -107,7 +107,7 @@
 	qcom,panel-supply-entries = <&dsi_panel_pwr_supply_L2>;
 	qcom,mdss-dsi-bl-pmic-control-type = "bl_ctrl_dcs";
 	qcom,mdss-dsi-bl-min-level = <8>;
-	qcom,mdss-dsi-bl-max-level = <2047>;
+	qcom,mdss-dsi-bl-max-level = <4095>;
 	qcom,mdss-brightness-max-level = <8191>;
 	qcom,mdss-brightness-init-level = <804>;
 	qcom,mdss-dsi-bl-inverted-dbv;
