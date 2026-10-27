@@ -440,6 +440,7 @@
 	mi,panel-on-dimming-delay = <120>;
 	mi,doze-hbm-dbv-level = <196>;
 	mi,doze-lbm-dbv-level = <22>;
+	mi,dbv-skip-range = <448 450>;
 	mi,max-brightness-clone = <16383>;
 	mi,mdss-dsi-panel-dc-threshold = <450>;
 	mi,dc-feature-enabled;
