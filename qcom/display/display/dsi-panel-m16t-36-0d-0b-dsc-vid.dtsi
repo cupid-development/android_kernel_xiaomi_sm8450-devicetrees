@@ -133,6 +133,8 @@ qcom,mdss-dsi-display-timings {
 	/* AOD CONFIG*/
 	mi,doze-hbm-dbv-level = <245>;
 	mi,doze-lbm-dbv-level = <20>;
+	mi,doze-cmd-fps = <30>;
+	mi,doze-fallback-dbv = <0xe5 0x10>;
 	mi,power-off-delay-ms = <2 1>;
 	mi,bl-sync-threshold = <327>;
 	mi,aod-nolp-command-enabled;
