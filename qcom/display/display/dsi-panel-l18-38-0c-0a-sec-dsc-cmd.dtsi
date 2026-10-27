@@ -446,8 +446,6 @@
 		timing@0{
 			mi,mdss-dsi-dimmingon-command = [15 00 00 00 00 00 02 53 28];
 			mi,mdss-dsi-dimmingon-command-state = "dsi_hs_mode";
-			mi,mdss-dsi-dimmingoff-command = [15 00 00 00 00 00 02 53 20];
-			mi,mdss-dsi-dimmingoff-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-hbm-on-command = [
 				39 00 00 40 00 00 03 F0 5A 5A
@@ -487,8 +485,6 @@
 		timing@1{
 			mi,mdss-dsi-dimmingon-command = [15 00 00 00 00 00 02 53 28];
 			mi,mdss-dsi-dimmingon-command-state = "dsi_hs_mode";
-			mi,mdss-dsi-dimmingoff-command = [15 00 00 00 00 00 02 53 20];
-			mi,mdss-dsi-dimmingoff-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-hbm-on-command = [
 				39 00 00 40 00 00 03 F0 5A 5A
@@ -528,8 +524,6 @@
 		timing@2{
 			mi,mdss-dsi-dimmingon-command = [15 00 00 00 00 00 02 53 28];
 			mi,mdss-dsi-dimmingon-command-state = "dsi_hs_mode";
-			mi,mdss-dsi-dimmingoff-command = [15 00 00 00 00 00 02 53 20];
-			mi,mdss-dsi-dimmingoff-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-hbm-on-command = [
 				39 00 00 40 00 00 03 F0 5A 5A

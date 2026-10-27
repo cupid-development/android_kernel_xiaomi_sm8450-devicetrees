@@ -15,9 +15,6 @@ mi,mdss-dsi-dimmingon-command = [
 ];
 mi,mdss-dsi-dimmingon-command-state = "dsi_hs_mode";
 
-mi,mdss-dsi-dimmingoff-command = [15 00 00 00 00 00 02 53 20];
-mi,mdss-dsi-dimmingoff-command-state = "dsi_hs_mode";
-
 mi,mdss-dsi-doze-hbm-command = [
 	/*Base 120HZ*/
 	39 00 00 40 00 00 02 2F 00

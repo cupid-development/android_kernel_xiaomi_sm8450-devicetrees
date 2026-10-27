@@ -513,8 +513,6 @@
 			/*<flat on gamma, flat off gamma>*/
 			mi,mdss-dsi-dimmingon-command = [39 00 00 00 00 00 02 53 28];
 			mi,mdss-dsi-dimmingon-command-state = "dsi_hs_mode";
-			mi,mdss-dsi-dimmingoff-command = [39 00 00 00 00 00 02 53 20];
-			mi,mdss-dsi-dimmingoff-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-hbm-on-command = [39 00 00 00 00 00 03 51 0F FF];
 			mi,mdss-dsi-hbm-on-command-state = "dsi_lp_mode";
@@ -719,8 +717,6 @@
 			/*<flat on gamma, flat off gamma>*/
 			mi,mdss-dsi-dimmingon-command = [39 00 00 00 00 00 02 53 28];
 			mi,mdss-dsi-dimmingon-command-state = "dsi_hs_mode";
-			mi,mdss-dsi-dimmingoff-command = [39 00 00 00 00 00 02 53 20];
-			mi,mdss-dsi-dimmingoff-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-hbm-on-command = [39 00 00 00 00 00 03 51 0F FF];
 			mi,mdss-dsi-hbm-on-command-state = "dsi_lp_mode";
@@ -921,8 +917,6 @@
 			/*<flat on gamma, flat off gamma>*/
 			mi,mdss-dsi-dimmingon-command = [39 00 00 00 00 00 02 53 28];
 			mi,mdss-dsi-dimmingon-command-state = "dsi_hs_mode";
-			mi,mdss-dsi-dimmingoff-command = [39 00 00 00 00 00 02 53 20];
-			mi,mdss-dsi-dimmingoff-command-state = "dsi_hs_mode";
 
 			mi,mdss-dsi-hbm-on-command = [39 00 00 00 00 00 03 51 0F FF];
 			mi,mdss-dsi-hbm-on-command-state = "dsi_lp_mode";

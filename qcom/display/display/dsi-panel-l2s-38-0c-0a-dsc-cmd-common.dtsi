@@ -7,8 +7,6 @@
 
 				mi,mdss-dsi-dimmingon-command = [15 00 00 00 00 00 02 53 28];
 				mi,mdss-dsi-dimmingon-command-state = "dsi_hs_mode";
-				mi,mdss-dsi-dimmingoff-command = [15 00 00 00 00 00 02 53 20];
-				mi,mdss-dsi-dimmingoff-command-state = "dsi_hs_mode";
 
 				mi,mdss-dsi-local-hbm-normal-white-1000nit-command = [
 					/* Local HBM setting */
