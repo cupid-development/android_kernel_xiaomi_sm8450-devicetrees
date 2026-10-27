@@ -518,7 +518,6 @@
 };
 
 &dsi_l12_42_02_0a_dsc_cmd {
-	mi,panel-id = <0x004C3132 0x00420200>;
 	mi,dsc-rc-profile = "nvt";
 
 	/* IRQF_ONESHOT | IRQF_TRIGGER_LOW */

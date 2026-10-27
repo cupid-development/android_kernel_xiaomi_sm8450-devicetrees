@@ -48,7 +48,6 @@
 
 		/* IRQF_ONESHOT | IRQF_TRIGGER_LOW */
 		mi,esd-err-irq-gpio = <&tlmm 116 0x2008>;
-		mi,panel-id = <0x00004C32 0x00380C00>;
 
 		mi,local-hbm-enabled;
 		mi,local-hbm-ui-ready-delay-num-frame = <4>; /* 4 frame */

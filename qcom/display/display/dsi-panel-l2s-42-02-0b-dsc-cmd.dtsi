@@ -48,7 +48,6 @@
 
 		/* IRQF_ONESHOT | IRQF_TRIGGER_HIGH */
 		mi,esd-err-irq-gpio = <&tlmm 116 0x2004>;
-		mi,panel-id = <0x004C3253 0x00420200>;
 
 		mi,local-hbm-enabled;
 		mi,local-hbm-alpha-table = "l2s-42-02-0b";
