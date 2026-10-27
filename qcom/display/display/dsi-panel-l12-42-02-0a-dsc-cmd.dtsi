@@ -536,8 +536,6 @@
 	mi,normal-max-brightness-clone = <2047>;
 	mi,mdss-dsi-fac-bl-max-level = <2047>;
 	mi,mdss-fac-brightness-max-level = <2047>;
-	mi,hbm-bl-min-level = <1>;
-	mi,hbm-bl-max-level = <2047>;
 
 	mi,doze-hbm-dbv-level = <252>;
 	mi,doze-lbm-dbv-level = <20>;
@@ -545,9 +543,6 @@
 
 	mi,thermal-dimming-flag;
 	mi,ddic-round-corner-enabled;
-
-	mi,fod-low-brightness-clone-threshold = <200>;
-	mi,fod-low-brightness-lux-threshold = <3>;
 
 	mi,flat-update-flag;
 	mi,flat-need-sync-te;

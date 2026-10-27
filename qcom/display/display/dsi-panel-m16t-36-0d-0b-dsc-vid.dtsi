@@ -158,7 +158,6 @@ qcom,mdss-dsi-display-timings {
 				39 00 00 00 00 00 03 F0 AA 00
 			];
 			mi,mdss-dsi-bl-sync-off-command-state = "dsi_lp_mode";
-			mi,flatmode-update-flag;
 			mi,mdss-dsi-flat-mode-on-command = [
 				39 00 00 00 00 00 02 5F 00
 				39 00 00 40 00 00 02 26 03

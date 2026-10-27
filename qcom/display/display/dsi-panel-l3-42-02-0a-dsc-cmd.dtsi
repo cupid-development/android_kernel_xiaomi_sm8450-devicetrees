@@ -559,9 +559,6 @@
 &dsi_l3_42_02_0a_dsc_cmd {
 	mi,panel-id = <0x00004C33 0x00420200>;
 	mi,dsc-rc-profile = "nvt";
-	mi,hbm-51-ctl-flag;
-	mi,hbm-bl-min-level = <1>;
-	mi,hbm-bl-max-level = <2047>;
 	mi,panel-on-dimming-delay = <120>;
 
 	/* IRQF_ONESHOT | IRQF_TRIGGER_HIGH */
@@ -579,9 +576,6 @@
 	qcom,mdss-dsi-panel-status-read-length = <1>;
 
 	mi,local-hbm-enabled;
-
-	mi,fod-low-brightness-clone-threshold = <200>;
-	mi,fod-low-brightness-lux-threshold = <3>;
 
 	mi,local-hbm-white-1000nit-update-flag;
 	mi,local-hbm-white-110nit-update-flag;

@@ -481,25 +481,14 @@
 &dsi_l9s_42_02_0c_mp_amoled_dsc_cmd {
 	mi,panel-id = <0x004C3953 0x00420201>;
 	mi,dsc-rc-profile = "nvt";
-	mi,hbm-51-ctl-flag;
-	mi,bl-51ctl-32bit-flag;
-	mi,aod-bl-51ctl-flag;
-	mi,aod-brightness = <0x155 0x0FFE>;
-	mi,hbm-off-51-index = <0>;
-	mi,hbm-fod-off-51-index = <0>;
-	mi,hbm-bl-min-level = <1>;
-	mi,hbm-bl-max-level = <2047>;
 	mi,max-brightness-clone = <4095>;
 	mi,mdss-dsi-fac-bl-max-level = <2047>;
 	mi,mdss-fac-brightness-max-level = <2047>;
 	mi,thermal-dimming-flag;
-	mi,mdss-dsi-panel-dc-type = <0>;
 
 	mi,local-hbm-enabled;
 	mi,doze-hbm-dbv-level = <245>;
 	mi,doze-lbm-dbv-level = <20>;
-	mi,fod-low-brightness-clone-threshold = <38>;
-	mi,fod-low-brightness-lux-threshold = <1>;
 	mi,local-hbm-white-1000nit-update-flag;
 	mi,local-hbm-white-110nit-update-flag;
 	mi,local-hbm-green-500nit-update-flag;
@@ -512,8 +501,6 @@
 
 	/* IRQF_ONESHOT | IRQF_TRIGGER_LOW */
 	mi,esd-err-irq-gpio = <&tlmm 11 0x2008>;
-
-	mi,panel-aod-to-off-command-need-enabled;
 
 	mi,vdc-param-update = <0xe9 1 4>, <0xb9 3 4>;
 
@@ -534,7 +521,6 @@
 	qcom,mdss-dsi-display-timings {
 		/* 60Hz */
 		timing@0{
-			mi,mdss-dsc-panel-id = <0x004C3953 0x00420200>;
 			/*<flat on gamma, flat off gamma>*/
 			mi,mdss-flat-status-control-gamma-cfg = <0x04 0x01>;
 			mi,mdss-dsi-dimmingon-command = [39 00 00 00 00 00 02 53 28];
@@ -773,16 +759,10 @@
 				39 00 00 00 00 00 02 2C 00
 			];
 			mi,mdss-dsi-local-hbm-off-to-llpm-command-state = "dsi_hs_mode";
-
-			mi,mdss-dsi-pre-doze-to-off-command = [
-				39 00 00 00 00 00 06 F0 55 AA 52 08 01
-				39 00 00 00 00 00 02 CE 0C];
-			mi,mdss-dsi-pre-doze-to-off-command-state = "dsi_hs_mode";
 		};
 
 		/* 120Hz */
 		timing@1{
-			mi,mdss-dsc-panel-id = <0x004C3953 0x00420200>;
 			/*<flat on gamma, flat off gamma>*/
 			mi,mdss-flat-status-control-gamma-cfg = <0x60 0x20>;
 			mi,mdss-dsi-dimmingon-command = [39 00 00 00 00 00 02 53 28];
@@ -1031,16 +1011,10 @@
 				39 00 00 00 00 00 02 2C 00
 			];
 			mi,mdss-dsi-local-hbm-off-to-llpm-command-state = "dsi_hs_mode";
-
-			mi,mdss-dsi-pre-doze-to-off-command = [
-				39 00 00 00 00 00 06 F0 55 AA 52 08 01
-				39 00 00 00 00 00 02 CE 0C];
-			mi,mdss-dsi-pre-doze-to-off-command-state = "dsi_hs_mode";
 		};
 
 		/* 90Hz */
 		timing@2{
-			mi,mdss-dsc-panel-id = <0x004C3953 0x00420200>;
 			/*<flat on gamma, flat off gamma>*/
 			mi,mdss-flat-status-control-gamma-cfg = <0x60 0x20>;
 			mi,mdss-dsi-dimmingon-command = [39 00 00 00 00 00 02 53 28];
@@ -1289,11 +1263,6 @@
 				39 00 00 00 00 00 02 2C 00
 			];
 			mi,mdss-dsi-local-hbm-off-to-llpm-command-state = "dsi_hs_mode";
-
-			mi,mdss-dsi-pre-doze-to-off-command = [
-				39 00 00 00 00 00 06 F0 55 AA 52 08 01
-				39 00 00 00 00 00 02 CE 0C];
-			mi,mdss-dsi-pre-doze-to-off-command-state = "dsi_hs_mode";
 		};
 	};
 };

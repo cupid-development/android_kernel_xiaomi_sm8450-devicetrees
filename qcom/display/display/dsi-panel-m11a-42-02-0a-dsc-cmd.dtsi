@@ -741,8 +741,6 @@
 	mi,normal-max-brightness-clone = <8191>;
 	mi,mdss-dsi-fac-bl-max-level = <2047>;
 	mi,mdss-fac-brightness-max-level = <2047>;
-	mi,hbm-bl-min-level = <1>;
-	mi,hbm-bl-max-level = <2047>;
 
 	mi,ddic-round-corner-enabled;
 
@@ -763,8 +761,6 @@
 	mi,local-hbm-alpha-or = <0x1000>;
 	mi,local-hbm-df-reg-min = <0x51c>;
 	mi,local-hbm-ui-ready-delay-num-frame = <4>; /* 4 frame */
-	mi,fod-low-brightness-clone-threshold = <200>;
-	mi,fod-low-brightness-lux-threshold = <3>;
 	mi,need-fod-animal-in-normal-enabled;
 
 	mi,doze-hbm-dbv-level = <252>;
@@ -773,7 +769,6 @@
 	mi,aod-nolp-command-enabled;
 
 	mi,thermal-dimming-flag;
-	mi,disable-ic-dimming-flag;
 
 	qcom,mdss-dsi-display-timings {
 		/* 60hz */

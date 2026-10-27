@@ -54,8 +54,6 @@
 		mi,local-hbm-alpha-table = "l2s-42-02-0b";
 
 		mi,local-hbm-ui-ready-delay-num-frame = <4>; /* 4 frame */
-		mi,fod-low-brightness-clone-threshold = <411>;
-		mi,fod-low-brightness-lux-threshold = <1>;
 		mi,need-fod-animal-in-normal-enabled;
 
 		mi,panel-on-dimming-delay = <120>;
