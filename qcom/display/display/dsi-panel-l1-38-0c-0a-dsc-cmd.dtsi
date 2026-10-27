@@ -59,14 +59,6 @@
 		mi,doze-lbm-dbv-level = <16>;
 		mi,aod-nolp-command-enabled;
 
-		mi,panel-manufacturer-info-addr =  <0xa1>;
-		mi,panel-wp-info-offset = <0>;
-		mi,panel-wp-info-len = <4>;
-		mi,panel-max-brightness-offset = <16>;
-		mi,panel-max-brightness-len = <2>;
-		mi,panel-manufacturer-time-offset = <4>;
-		mi,panel-manufacturer-time-len = <4>;
-
 		qcom,mdss-dsi-display-timings {
 			timing@wqhd_60hz_index_00 {
 				#include "dsi-panel-l1-38-0c-0a-dsc-cmd-common.dtsi"
