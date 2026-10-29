@@ -720,45 +720,6 @@
 			];
 			mi,mdss-dsi-local-hbm-white-110nit-giroff-pre-read-command-state = "dsi_lp_mode";
 
-			mi,mdss-dsi-local-hbm-normal-white-110nit-command = [
-				39 00 00 00 00 00 06 F0 55 AA 52 08 02
-				39 00 00 40 00 00 02 6F 08
-				/*FPR area RGB[11:0] setting*/
-				39 00 00 40 00 00 07 D0 07 13 06 49 07 A4
-				/*FPR center postion x[11:0], y[11:0]*/
-				39 00 00 40 00 00 05 88 02 1C 08 73
-				/*alpha for AA*/
-				39 00 00 40 00 00 03 87 0F FF
-				39 00 00 40 00 00 02 6F 02
-				39 00 00 00 34 00 02 87 05
-			];
-			mi,mdss-dsi-local-hbm-normal-white-110nit-command-update  = <0x87 4 2>, <0xD0 2 6>;
-			mi,mdss-dsi-local-hbm-normal-white-110nit-command-state = "dsi_lp_mode";
-
-			mi,mdss-dsi-local-hbm-hlpm-white-110nit-command = [
-				/* AOD off */
-				39 00 00 00 00 00 06 F0 55 AA 52 08 00
-				39 00 00 40 00 00 02 B2 18
-				39 00 00 40 00 00 05 51 00 14 0F FF
-				39 00 00 00 07 00 02 38 00
-				39 00 00 00 00 00 06 F0 55 AA 52 08 01
-				39 00 00 00 1B 00 05 BA 10 1A 10 1A
-				39 00 00 00 00 00 05 BA 10 10 10 10
-				/* Local HBM setting*/
-				39 00 00 00 00 00 06 F0 55 AA 52 08 02
-				39 00 00 40 00 00 02 6F 08
-				/*FPR area RGB[11:0] setting*/
-				39 00 00 40 00 00 07 D0 07 13 06 49 07 A4
-				/*FPR center postion x[11:0], y[11:0]*/
-				39 00 00 40 00 00 05 88 02 1C 08 73
-				/*alpha for AA*/
-				39 00 00 40 00 00 03 87 0F FF
-				39 00 00 40 00 00 02 6F 02
-				39 00 00 00 34 00 02 87 05
-			];
-			mi,mdss-dsi-local-hbm-hlpm-white-110nit-command-update = <0x51 2 2>, <0x87 11 2>, <0xD0 9 6>;
-			mi,mdss-dsi-local-hbm-hlpm-white-110nit-command-state = "dsi_lp_mode";
-
 			mi,mdss-dsi-local-hbm-off-to-normal-command = [
 				39 00 00 00 00 00 02 53 20
 				39 00 00 40 00 00 03 51 07 FF
@@ -961,54 +922,6 @@
 			];
 			mi,mdss-dsi-local-hbm-white-110nit-giroff-pre-read-command-state = "dsi_lp_mode";
 
-			mi,mdss-dsi-local-hbm-normal-white-110nit-command = [
-				39 00 00 00 00 00 06 F0 55 AA 52 08 02
-				39 00 00 40 00 00 02 6F 08
-				/*FPR area RGB[11:0] setting*/
-				39 00 00 40 00 00 07 D0 07 13 06 49 07 A4
-				/*FPR center postion x[11:0], y[11:0]*/
-				39 00 00 40 00 00 05 88 02 1C 08 73
-				/*alpha for AA*/
-				39 00 00 40 00 00 03 87 0F FF
-				39 00 00 40 00 00 02 6F 02
-				39 00 00 00 1B 00 02 87 05
-			];
-			mi,mdss-dsi-local-hbm-normal-white-110nit-command-update  = <0x87 4 2>, <0xD0 2 6>;
-			mi,mdss-dsi-local-hbm-normal-white-110nit-command-state = "dsi_lp_mode";
-
-			mi,mdss-dsi-local-hbm-hlpm-white-110nit-command = [
-				/* AOD off */
-				39 00 00 00 00 00 06 F0 55 AA 52 08 00
-				39 00 00 40 00 00 02 B2 18
-				39 00 00 40 00 00 05 51 00 14 0F FF
-				39 00 00 00 07 00 02 38 00
-				39 00 00 00 00 00 06 F0 55 AA 52 08 01
-				39 00 00 00 1B 00 05 BA 10 1A 10 1A
-				39 00 00 00 00 00 05 BA 10 10 10 10
-				/* 120 Hz */
-				39 00 00 00 00 00 02 2F 02
-				39 00 00 40 00 00 06 F0 55 AA 52 08 00
-				39 00 00 40 00 00 02 6F 09
-				39 00 00 40 00 00 02 C0 20
-				39 00 00 40 00 00 06 F0 55 AA 52 08 02
-				39 00 00 40 00 00 02 CC 30
-				39 00 00 00 14 00 02 CE 01
-				39 00 00 00 00 00 02 CC 00
-				/* Local HBM setting*/
-				39 00 00 00 00 00 06 F0 55 AA 52 08 02
-				39 00 00 40 00 00 02 6F 08
-				/*FPR area RGB[11:0] setting*/
-				39 00 00 40 00 00 07 D0 07 13 06 49 07 A4
-				/*FPR center postion x[11:0], y[11:0]*/
-				39 00 00 40 00 00 05 88 02 1C 08 73
-				/*alpha for AA*/
-				39 00 00 40 00 00 03 87 0F FF
-				39 00 00 40 00 00 02 6F 02
-				39 00 00 00 1B 00 02 87 05
-			];
-			mi,mdss-dsi-local-hbm-hlpm-white-110nit-command-update = <0x51 2 2>, <0x87 19 2>, <0xD0 17 6>;
-			mi,mdss-dsi-local-hbm-hlpm-white-110nit-command-state = "dsi_lp_mode";
-
 			mi,mdss-dsi-local-hbm-off-to-normal-command = [
 				39 00 00 00 00 00 02 53 20
 				39 00 00 40 00 00 03 51 07 FF
@@ -1210,54 +1123,6 @@
 				39 00 00 00 00 00 02 BF 17
 			];
 			mi,mdss-dsi-local-hbm-white-110nit-giroff-pre-read-command-state = "dsi_lp_mode";
-
-			mi,mdss-dsi-local-hbm-normal-white-110nit-command = [
-				39 00 00 00 00 00 06 F0 55 AA 52 08 02
-				39 00 00 40 00 00 02 6F 08
-				/*FPR area RGB[11:0] setting*/
-				39 00 00 40 00 00 07 D0 07 13 06 49 07 A4
-				/*FPR center postion x[11:0], y[11:0]*/
-				39 00 00 40 00 00 05 88 02 1C 08 73
-				/*alpha for AA*/
-				39 00 00 40 00 00 03 87 0F FF
-				39 00 00 40 00 00 02 6F 02
-				39 00 00 00 23 00 02 87 05
-			];
-			mi,mdss-dsi-local-hbm-normal-white-110nit-command-update  = <0x87 4 2>, <0xD0 2 6>;
-			mi,mdss-dsi-local-hbm-normal-white-110nit-command-state = "dsi_lp_mode";
-
-			mi,mdss-dsi-local-hbm-hlpm-white-110nit-command = [
-				/* AOD off */
-				39 00 00 00 00 00 06 F0 55 AA 52 08 00
-				39 00 00 40 00 00 02 B2 18
-				39 00 00 40 00 00 05 51 00 14 0F FF
-				39 00 00 00 07 00 02 38 00
-				39 00 00 00 00 00 06 F0 55 AA 52 08 01
-				39 00 00 00 1B 00 05 BA 10 1A 10 1A
-				39 00 00 00 00 00 05 BA 10 10 10 10
-				/* 90 Hz */
-				39 00 00 00 00 00 02 2F 03
-				39 00 00 40 00 00 06 F0 55 AA 52 08 00
-				39 00 00 40 00 00 02 6F 0A
-				39 00 00 40 00 00 02 C0 01
-				39 00 00 40 00 00 06 F0 55 AA 52 08 02
-				39 00 00 40 00 00 02 CC 30
-				39 00 00 00 14 00 02 CE 01
-				39 00 00 00 00 00 02 CC 00
-				/* Local HBM setting*/
-				39 00 00 00 00 00 06 F0 55 AA 52 08 02
-				39 00 00 40 00 00 02 6F 08
-				/*FPR area RGB[11:0] setting*/
-				39 00 00 40 00 00 07 D0 07 13 06 49 07 A4
-				/*FPR center postion x[11:0], y[11:0]*/
-				39 00 00 40 00 00 05 88 02 1C 08 73
-				/*alpha for AA*/
-				39 00 00 40 00 00 03 87 0F FF
-				39 00 00 40 00 00 02 6F 02
-				39 00 00 00 23 00 02 87 05
-			];
-			mi,mdss-dsi-local-hbm-hlpm-white-110nit-command-update = <0x51 2 2>, <0x87 19 2>, <0xD0 17 6>;
-			mi,mdss-dsi-local-hbm-hlpm-white-110nit-command-state = "dsi_lp_mode";
 
 			mi,mdss-dsi-local-hbm-off-to-normal-command = [
 				39 00 00 00 00 00 02 53 20
